@@ -1,0 +1,5 @@
+# Only the report folder (and README) belongs on GitHub
+/*
+!/report/
+!/README.md
+!/.gitignore
