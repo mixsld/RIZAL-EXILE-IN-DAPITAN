@@ -114,7 +114,7 @@
   }
 
   /* ---------- letters to Europe: one scientist per beat ---------- */
-  const CITY_KEYS = ['london', 'cologne', 'prague', 'stuttgart', 'dresden'];
+  const CITY_KEYS = ['london', null, 'prague', 'stuttgart', 'dresden'];
   let eu = null;
   function europeEnter(ctx) {
     const f = R.frame(ctx, 'europe_letters');
@@ -122,6 +122,7 @@
     const sci = step('europe').extra.scientists;
     eu = { art, cards: [], n: 0, paths: R.part(art, 'letter-paths') };
     eu.paths.setAttribute('opacity', 1);
+    const jo = R.part(art, 'city-cologne'); if (jo) jo.remove();
     sci.forEach(([name, place, topic], i) => {
       const c = R.h('div', 'sci-card'); c.innerHTML = `<b>${name}</b><span>${place}</span><i>${topic}</i>`;
       R.place(c, 70, 230 + i * 118, 420); c.style.visibility = 'hidden'; f.appendChild(c); eu.cards.push(c);
@@ -133,6 +134,7 @@
     eu.cards.forEach((c, i) => { c.style.visibility = i < n ? 'visible' : 'hidden'; });
     eu.paths.textContent = '';
     for (let i = 0; i < n; i++) {
+      if (!CITY_KEYS[i]) { if (animate && i === n - 1) R.slideIn(eu.cards[i], -60, 0, 0, 450); continue; }   // the book gives no place for Dr. Joest
       const g = R.part(eu.art, 'city-' + CITY_KEYS[i]);
       const m = /translate\(([-\d.]+) ([-\d.]+)\)/.exec(g.getAttribute('transform'));
       const x = +m[1], y = +m[2];

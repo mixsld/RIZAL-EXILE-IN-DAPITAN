@@ -41,7 +41,7 @@
     R.setOpacity(R.part(art, 'bricks'), 0);
     if (!R.fwd(ctx)) { press(false); spark(false); }
     R.app.ui.setLabels([
-      { text: 'brick machine', x: 560, y: 300, toX: 500, toY: 400, anchor: 'middle' },
+      { text: 'brick maker', x: 560, y: 300, toX: 500, toY: 400, anchor: 'middle' },
       { text: 'wooden lighter', x: 1640, y: 470, toX: 1440, toY: 520, anchor: 'middle' }
     ]);
   }
@@ -183,7 +183,7 @@
   function cuba(ctx) {
     const f = R.frame(ctx, null);
     const letter = R.h('div', 'cuba-letter');
-    letter.innerHTML = '<div class="cl-seal"></div><span class="cl-from">From the Governor General, Manila</span><b>Your offer to serve as a doctor in Cuba is accepted.</b><span class="cl-pass">Safe-conduct pass enclosed</span><span class="cl-sign">— Ramon Blanco</span>';
+    letter.innerHTML = '<div class="cl-seal"></div><span class="cl-from">From the Governor General, Manila</span><b>Your offer to serve as a doctor in Cuba is accepted.</b><span class="cl-pass">A safe-conduct pass will be given</span><span class="cl-sign">— Ramon Blanco</span>';
     R.place(letter, 520, 210, 760, 520); f.appendChild(letter);
     const st = R.stamp('stamp-accepted'); R.place(st, 1080, 520, 520, 245); f.appendChild(st);
     if (R.fwd(ctx)) {

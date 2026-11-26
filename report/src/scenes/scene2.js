@@ -136,7 +136,7 @@
   function lotteryEnter(ctx) {
     const f = R.frame(ctx, null);
     const ticket = R.h('div', 'ticket'); R.place(ticket, 640, 200, 900, 420); f.appendChild(ticket);
-    ticket.innerHTML = `<div class="t-head">LOTERÍA DE FILIPINAS · 1892</div><div class="t-no">No. 9736</div>
+    ticket.innerHTML = `<div class="t-head">LOTTERY · 1892</div><div class="t-no">news by boat from Butuan</div>
       <div class="t-prize"><span class="t-label">2nd PRIZE</span><span class="t-amount">P20,000</span></div>
       <div class="t-foot">Shared by Rizal, Capt. Carnicero &amp; Francisco Equilor</div>`;
     const cv = document.createElement('canvas'); cv.width = 700; cv.height = 170; cv.className = 'scratch';
