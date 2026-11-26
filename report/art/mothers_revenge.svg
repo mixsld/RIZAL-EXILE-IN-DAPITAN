@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 250 900 570">
+  <defs>
+    <linearGradient id="mothers_revenge-clay" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E09662"/><stop offset="1" stop-color="#B8693C"/></linearGradient>
+    <linearGradient id="mothers_revenge-dark" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#A9643A"/><stop offset="1" stop-color="#7E4424"/></linearGradient>
+    <pattern id="mothers_revenge-dots" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="5" cy="5" r="1.7" fill="#5A2A12" opacity=".25"/></pattern>
+  </defs>
+  <ellipse cx="450" cy="800" rx="390" ry="18" fill="#2E2117" opacity=".25"/>
+  <g stroke="#2E2117" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+    <!-- plinth -->
+    <path d="M150 650 H750 V790 H150 Z" fill="#8B5A2B"/>
+    <path d="M120 620 H780 V656 H120 Z" fill="#A8743F"/>
+    <path d="M210 690 H690 V746 H210 Z" fill="none" stroke-width="4"/>
+
+    <!-- ===== crocodile: long scaly body, jaws open to the left ===== -->
+    <path d="M200 610 C200 560 250 540 330 540 C460 536 600 544 700 560 C760 570 810 590 840 612 Z" fill="url(#mothers_revenge-dark)"/>
+    <path d="M330 540 C460 536 600 544 700 560 L700 610 L330 610 Z" fill="url(#mothers_revenge-dots)" stroke="none"/>
+    <!-- back ridges -->
+    <path d="M360 540 L376 520 L392 539 L410 518 L428 538 L446 517 L464 538 L484 518 L502 539 L522 520 L540 541 L560 523 L578 544 L600 528 L616 548 L640 534 L654 553 L680 542" fill="url(#mothers_revenge-dark)" stroke-width="5"/>
+    <!-- legs -->
+    <path d="M300 600 L286 622 H322 L330 600 Z M660 596 L656 622 H692 L692 600 Z" fill="url(#mothers_revenge-dark)" stroke-width="5"/>
+    <!-- head: upper jaw raised, lower jaw down -->
+    <path d="M230 566 C200 540 150 500 70 486 C64 500 76 512 92 516 C140 530 180 556 210 584 Z" fill="url(#mothers_revenge-dark)"/>
+    <path d="M214 590 C180 606 130 616 62 614 C60 600 72 594 88 592 C130 588 170 582 206 576 Z" fill="url(#mothers_revenge-dark)"/>
+    <path d="M94 518 L102 534 L112 522 L120 538 L132 528 L140 544 M90 590 L98 576 L108 590 L118 574 L128 588" fill="#FFF8EA" stroke-width="3"/>
+    <circle cx="214" cy="540" r="13" fill="#E8C25A" stroke-width="5"/><circle cx="216" cy="540" r="5" fill="#2E2117" stroke="none"/>
+
+    <!-- ===== the puppy, caught in the jaws ===== -->
+    <path d="M96 566 C84 546 92 524 116 522 C134 510 158 518 160 538 C174 548 170 572 150 578 C136 590 108 586 96 566 Z" fill="url(#mothers_revenge-clay)"/>
+    <path d="M118 524 C104 506 112 494 126 500 C130 510 128 518 122 526 Z" fill="url(#mothers_revenge-dark)" stroke-width="5"/>
+    <circle cx="136" cy="544" r="5" fill="#2E2117" stroke="none"/>
+    <ellipse cx="134" cy="563" rx="6" ry="8" fill="#5A2A12" stroke-width="3"/>
+
+    <!-- ===== Syria, the mother dog, lunging at the crocodile ===== -->
+    <!-- tail -->
+    <path d="M640 404 C690 380 720 330 700 286" fill="none" stroke-width="20"/>
+    <path d="M640 404 C690 380 720 330 700 286" fill="none" stroke="#D2875A" stroke-width="9"/>
+    <!-- hind legs planted on the crocodile's back -->
+    <path d="M588 452 L572 536 L600 538 L620 452 Z" fill="url(#mothers_revenge-dark)"/>
+    <path d="M620 440 L630 534 L660 532 L652 440 Z" fill="url(#mothers_revenge-clay)"/>
+    <!-- neck (behind the body) -->
+    <path d="M400 410 C350 380 320 380 296 392 L306 440 C330 446 356 440 380 430 Z" fill="url(#mothers_revenge-clay)"/>
+    <!-- lean body, deep chest -->
+    <path d="M330 430 C340 380 410 352 490 358 C566 362 630 384 650 420 C664 452 640 478 600 478 L400 480 C356 480 324 462 330 430 Z" fill="url(#mothers_revenge-clay)"/>
+    <path d="M490 358 C566 362 630 384 650 420 C664 452 640 478 600 478 L560 478 C600 450 610 410 490 358 Z" fill="url(#mothers_revenge-dots)" stroke="none"/>
+    <!-- front legs bracing on the crocodile's head -->
+    <path d="M356 464 L300 540 L330 552 L392 476 Z" fill="url(#mothers_revenge-clay)"/>
+    <path d="M400 474 L370 546 L400 552 L432 478 Z" fill="url(#mothers_revenge-dark)"/>
+    <!-- neck + head, snarling down at the jaws -->
+    <path d="M318 384 C290 366 250 368 230 392 L176 430 C166 438 170 452 184 452 L238 448 C260 462 296 460 320 440 Z" fill="url(#mothers_revenge-clay)"/>
+    <path d="M286 378 L296 318 L326 376 Z" fill="url(#mothers_revenge-dark)"/>
+    <path d="M262 380 L262 330 L284 374 Z" fill="url(#mothers_revenge-clay)"/>
+    <circle cx="176" cy="436" r="8" fill="#2E2117" stroke="none"/>
+    <path d="M182 450 C204 462 228 462 246 452" fill="none" stroke-width="5"/>
+    <path d="M196 452 L200 466 L208 454 M218 456 L222 470 L230 456" fill="#FFF8EA" stroke-width="3"/>
+    <circle cx="256" cy="402" r="7" fill="#2E2117" stroke="none"/>
+    <path d="M240 390 L272 398" fill="none" stroke-width="6"/>
+  </g>
+  <!-- brass plaque -->
+  <g transform="translate(450 718)">
+    <rect x="-150" y="-24" width="300" height="48" rx="6" fill="#E8C25A" stroke="#2E2117" stroke-width="5"/>
+    <text y="9" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-weight="700" font-size="25" fill="#5A3A1C">The Mother's Revenge</text>
+  </g>
+</svg>

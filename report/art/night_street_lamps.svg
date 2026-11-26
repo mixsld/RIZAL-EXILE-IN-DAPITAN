@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="night_street_lamps-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14243D"/><stop offset="1" stop-color="#2D4466"/></linearGradient>
+    <radialGradient id="night_street_lamps-glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFD98A" stop-opacity=".85"/><stop offset="1" stop-color="#FFD98A" stop-opacity="0"/></radialGradient>
+    <pattern id="night_street_lamps-dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="7" cy="7" r="2.4" fill="#000" opacity=".22"/></pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#night_street_lamps-sky)"/>
+  <rect width="1920" height="700" fill="url(#night_street_lamps-dots)" opacity=".5"/>
+  <g fill="#FFF3C4"><circle cx="300" cy="120" r="3"/><circle cx="760" cy="200" r="3"/><circle cx="1220" cy="90" r="3"/><circle cx="1700" cy="160" r="3"/><path d="M1000 150 l5 11 11 5 -11 5 -5 11 -5 -11 -11 -5 11 -5 Z"/></g>
+  <!-- marsh at the back -->
+  <g id="marsh">
+    <path d="M0 600 C300 580 700 600 1000 590 C1300 580 1600 600 1920 590 L1920 660 L0 660 Z" fill="#2E4A45" stroke="#0E1626" stroke-width="5"/>
+    <g fill="#3E6070" opacity=".9"><ellipse cx="300" cy="625" rx="180" ry="18"/><ellipse cx="900" cy="630" rx="220" ry="16"/><ellipse cx="1500" cy="622" rx="200" ry="18"/></g>
+    <g fill="none" stroke="#1E3A30" stroke-width="5" stroke-linecap="round"><path d="M200 620 V580 M220 622 L232 576 M1000 626 V586 M1020 628 L1032 584 M1600 620 V578"/></g>
+  </g>
+  <g id="mosquitoes" fill="#0E1626" stroke="#0E1626" stroke-width="2">
+    <g transform="translate(420 540)"><ellipse rx="6" ry="3"/><path d="M0 0 L-8 -8 M0 0 L8 -8" fill="none"/></g>
+    <g transform="translate(980 520)"><ellipse rx="6" ry="3"/><path d="M0 0 L-8 -8 M0 0 L8 -8" fill="none"/></g>
+    <g transform="translate(1440 550)"><ellipse rx="6" ry="3"/><path d="M0 0 L-8 -8 M0 0 L8 -8" fill="none"/></g>
+  </g>
+  <!-- houses along the street -->
+  <g stroke="#0E1626" stroke-width="6" stroke-linejoin="round">
+    <path d="M60 760 V560 H420 V760 Z" fill="#2B3E5C"/><path d="M30 564 L240 470 L450 564 Z" fill="#3A2A2A"/>
+    <path d="M700 760 V580 H1060 V760 Z" fill="#273955"/><path d="M670 584 L880 490 L1090 584 Z" fill="#3A2A2A"/>
+    <path d="M1340 760 V560 H1720 V760 Z" fill="#2B3E5C"/><path d="M1310 564 L1530 466 L1750 564 Z" fill="#3A2A2A"/>
+  </g>
+  <g fill="#1E2738" stroke="#0E1626" stroke-width="4"><rect x="120" y="600" width="90" height="70"/><rect x="270" y="600" width="90" height="70"/><rect x="760" y="620" width="90" height="70"/><rect x="910" y="620" width="90" height="70"/><rect x="1400" y="600" width="90" height="70"/><rect x="1570" y="600" width="90" height="70"/></g>
+  <!-- street -->
+  <path d="M0 760 H1920 V1080 H0 Z" fill="#3A3F4A" stroke="#0E1626" stroke-width="6"/>
+  <rect y="770" width="1920" height="310" fill="url(#night_street_lamps-dots)" opacity=".6"/>
+  <!-- four coconut-oil lamps -->
+  <g stroke="#2E2117" stroke-width="6" stroke-linejoin="round">
+    <g id="lamp-1" transform="translate(540 0)"><circle data-glow="" cx="0" cy="560" r="170" fill="url(#night_street_lamps-glow)" opacity="0" stroke="none"/><ellipse data-glow="" cx="0" cy="900" rx="150" ry="30" fill="#FFD98A" opacity="0" stroke="none"/><path d="M0 900 V600" fill="none" stroke="#5A3A1C" stroke-width="14"/><path d="M-30 600 H30 L22 540 H-22 Z" fill="#2B3446"/><path data-flame="" d="M0 590 C-14 570 -4 556 0 544 C6 558 14 572 0 590 Z" fill="#2B3446" stroke-width="3"/><path d="M-36 540 H36 L0 512 Z" fill="#2E2117"/><path d="M-16 600 H16 V616 H-16 Z" fill="#8B5A2B"/></g>
+    <g id="lamp-2" transform="translate(1180 0)"><circle data-glow="" cx="0" cy="560" r="170" fill="url(#night_street_lamps-glow)" opacity="0" stroke="none"/><ellipse data-glow="" cx="0" cy="900" rx="150" ry="30" fill="#FFD98A" opacity="0" stroke="none"/><path d="M0 900 V600" fill="none" stroke="#5A3A1C" stroke-width="14"/><path d="M-30 600 H30 L22 540 H-22 Z" fill="#2B3446"/><path data-flame="" d="M0 590 C-14 570 -4 556 0 544 C6 558 14 572 0 590 Z" fill="#2B3446" stroke-width="3"/><path d="M-36 540 H36 L0 512 Z" fill="#2E2117"/><path d="M-16 600 H16 V616 H-16 Z" fill="#8B5A2B"/></g>
+    <g id="lamp-3" transform="translate(1800 0)"><circle data-glow="" cx="0" cy="560" r="170" fill="url(#night_street_lamps-glow)" opacity="0" stroke="none"/><ellipse data-glow="" cx="0" cy="900" rx="150" ry="30" fill="#FFD98A" opacity="0" stroke="none"/><path d="M0 900 V600" fill="none" stroke="#5A3A1C" stroke-width="14"/><path d="M-30 600 H30 L22 540 H-22 Z" fill="#2B3446"/><path data-flame="" d="M0 590 C-14 570 -4 556 0 544 C6 558 14 572 0 590 Z" fill="#2B3446" stroke-width="3"/><path d="M-36 540 H36 L0 512 Z" fill="#2E2117"/><path d="M-16 600 H16 V616 H-16 Z" fill="#8B5A2B"/></g>
+    <!-- the big clickable lamp in front -->
+    <g id="lamp-main" transform="translate(1440 0)"><circle data-glow="" cx="0" cy="470" r="260" fill="url(#night_street_lamps-glow)" opacity="0" stroke="none"/><ellipse data-glow="" cx="0" cy="1010" rx="240" ry="40" fill="#FFD98A" opacity="0" stroke="none"/>
+      <path d="M0 1010 V520" fill="none" stroke="#5A3A1C" stroke-width="24"/><path d="M-60 520 H60 L46 400 H-46 Z" fill="#2B3446"/>
+      <path data-flame="" d="M0 500 C-26 464 -8 438 0 416 C12 442 26 466 0 500 Z" fill="#2B3446" stroke-width="4"/>
+      <path d="M-70 400 H70 L0 350 Z" fill="#2E2117"/><path d="M-34 520 H34 V550 H-34 Z" fill="#8B5A2B"/>
+      <path d="M-46 400 L-60 520 M46 400 L60 520" fill="none" stroke-width="4"/>
+      <!-- coconut oil reservoir -->
+      <path d="M-40 560 C-40 600 40 600 40 560 Z" fill="#7A5230"/><path d="M-24 566 C-14 576 14 576 24 566" fill="none" stroke="#F4D78A" stroke-width="4"/></g>
+  </g>
+</svg>

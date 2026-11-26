@@ -1,0 +1,220 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <defs>
+    <!-- comic halftone dots -->
+    <pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="7" cy="7" r="2.6" fill="#2E2117" opacity="0.18"/>
+    </pattern>
+    <pattern id="dotsLight" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="8" r="2.2" fill="#FFFFFF" opacity="0.35"/>
+    </pattern>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6D9A3"/>
+      <stop offset="1" stop-color="#FBEBC8"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3C7DAE"/>
+      <stop offset="1" stop-color="#1F4E79"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .ink { stroke:#2E2117; stroke-width:6; stroke-linejoin:round; stroke-linecap:round; }
+    .thin { stroke:#2E2117; stroke-width:4; stroke-linejoin:round; stroke-linecap:round; fill:none; }
+    .head { font-family: Georgia, 'Palatino Linotype', serif; font-weight:700; }
+    .hand { font-family: 'Segoe Print', 'Ink Free', cursive; }
+    .body { font-family: Georgia, serif; }
+  </style>
+
+  <!-- ============ SKY ============ -->
+  <rect width="1920" height="1080" fill="url(#sky)"/>
+  <rect width="1920" height="420" fill="url(#dots)" opacity="0.55"/>
+
+  <!-- sun with comic rays -->
+  <g transform="translate(520 400)">
+    <g fill="#F2C14E" opacity="0.55">
+      <path d="M0 0 L-40 -260 L40 -260 Z"/>
+      <path d="M0 0 L-40 -260 L40 -260 Z" transform="rotate(30)"/>
+      <path d="M0 0 L-40 -260 L40 -260 Z" transform="rotate(60)"/>
+      <path d="M0 0 L-40 -260 L40 -260 Z" transform="rotate(-30)"/>
+      <path d="M0 0 L-40 -260 L40 -260 Z" transform="rotate(-60)"/>
+      <path d="M0 0 L-40 -260 L40 -260 Z" transform="rotate(-90)"/>
+      <path d="M0 0 L-40 -260 L40 -260 Z" transform="rotate(90)"/>
+    </g>
+    <circle r="92" fill="#F4B942" class="ink"/>
+  </g>
+
+  <!-- clouds -->
+  <g class="ink" fill="#FFF8EA">
+    <path d="M1180 250 C1150 250 1140 215 1168 205 C1165 172 1210 160 1232 182 C1250 150 1310 152 1322 190 C1355 180 1385 205 1372 232 C1392 248 1378 272 1352 268 C1320 284 1290 276 1278 268 C1250 282 1215 280 1200 266 C1192 262 1186 256 1180 250 Z"/>
+    <path d="M880 190 C860 190 856 166 876 160 C876 138 906 130 920 146 C934 124 976 128 982 154 C1004 150 1020 168 1010 184 C1018 198 1004 210 988 206 C966 216 944 212 936 206 C918 214 896 210 888 200 Z"/>
+  </g>
+
+  <!-- ============ DAPITAN COAST (right) ============ -->
+  <g>
+    <!-- far hill -->
+    <path d="M1380 700 C1450 560 1560 520 1660 540 C1760 500 1880 520 1940 560 L1940 720 L1380 720 Z" fill="#6E9A5B" class="ink"/>
+    <path d="M1500 640 C1560 600 1640 590 1700 610" class="thin" opacity="0.5"/>
+    <path d="M1720 590 C1780 570 1850 575 1900 600" class="thin" opacity="0.5"/>
+    <!-- near shore -->
+    <path d="M1460 720 C1540 680 1640 668 1760 676 C1840 680 1900 690 1940 700 L1940 760 L1440 760 Z" fill="#E9D3A0" class="ink"/>
+
+    <!-- nipa hut -->
+    <g transform="translate(1690 600)">
+      <path d="M-10 78 L-10 40 M70 78 L70 40" class="ink" fill="none"/>
+      <path d="M-20 40 L80 40 L80 0 L-20 0 Z" fill="#C9A26A" class="ink"/>
+      <path d="M-40 4 L30 -52 L100 4 Z" fill="#B5873F" class="ink"/>
+      <path d="M-10 -20 L70 -20 M0 -32 L60 -32" class="thin" opacity="0.6"/>
+      <path d="M20 40 L20 12 L42 12 L42 40" fill="#5A3E22" class="ink"/>
+    </g>
+
+    <!-- palm tree 1 -->
+    <g transform="translate(1560 690)">
+      <path d="M0 0 C-6 -60 -2 -120 14 -170" fill="none" stroke="#2E2117" stroke-width="22" stroke-linecap="round"/>
+      <path d="M0 0 C-6 -60 -2 -120 14 -170" fill="none" stroke="#9B6B3D" stroke-width="12" stroke-linecap="round"/>
+      <g class="ink" fill="#4F8A3F">
+        <path d="M14 -170 C-40 -200 -100 -180 -130 -140 C-80 -160 -40 -160 14 -170 Z"/>
+        <path d="M14 -170 C60 -210 130 -200 160 -160 C110 -175 60 -175 14 -170 Z"/>
+        <path d="M14 -170 C0 -230 40 -270 80 -270 C50 -240 30 -205 14 -170 Z"/>
+        <path d="M14 -170 C-30 -230 -90 -235 -110 -215 C-60 -210 -25 -195 14 -170 Z"/>
+        <path d="M14 -170 C70 -170 110 -130 115 -95 C85 -130 50 -150 14 -170 Z"/>
+      </g>
+      <circle cx="10" cy="-160" r="10" fill="#7A5230" class="ink"/>
+    </g>
+    <!-- palm tree 2 (small) -->
+    <g transform="translate(1840 690) scale(0.75)">
+      <path d="M0 0 C8 -60 4 -120 -12 -170" fill="none" stroke="#2E2117" stroke-width="22" stroke-linecap="round"/>
+      <path d="M0 0 C8 -60 4 -120 -12 -170" fill="none" stroke="#9B6B3D" stroke-width="12" stroke-linecap="round"/>
+      <g class="ink" fill="#4F8A3F">
+        <path d="M-12 -170 C-60 -200 -120 -185 -150 -145 C-100 -165 -60 -165 -12 -170 Z"/>
+        <path d="M-12 -170 C30 -210 100 -205 130 -165 C80 -178 35 -178 -12 -170 Z"/>
+        <path d="M-12 -170 C-20 -230 10 -270 50 -272 C22 -240 2 -205 -12 -170 Z"/>
+        <path d="M-12 -170 C40 -170 85 -135 92 -100 C60 -135 25 -152 -12 -170 Z"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============ SEA ============ -->
+  <path d="M0 700 L1940 700 L1940 1080 L0 1080 Z" fill="url(#sea)"/>
+  <path d="M0 700 L1460 700" class="ink" fill="none"/>
+  <rect y="820" width="1920" height="260" fill="url(#dotsLight)" opacity="0.5"/>
+  <!-- wave strokes -->
+  <g style="stroke:#EAF3FA;stroke-width:5;fill:none;stroke-linecap:round" opacity="0.85">
+    <path d="M90 790 q30 -18 60 0 t60 0"/>
+    <path d="M380 860 q30 -18 60 0 t60 0 t60 0"/>
+    <path d="M1480 820 q30 -18 60 0 t60 0"/>
+    <path d="M1700 900 q30 -18 60 0 t60 0 t60 0"/>
+    <path d="M1180 940 q30 -18 60 0 t60 0"/>
+  </g>
+
+  <!-- dashed route behind the ship -->
+  <path d="M120 760 C380 735 560 765 800 752" fill="none" stroke="#FFF8EA" stroke-width="6" stroke-dasharray="4 22" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- ============ STEAMER "CEBU" ============ -->
+  <g id="steamer" transform="translate(0 0)">
+    <!-- smoke -->
+    <g class="ink" fill="#E8E1D4">
+      <path d="M1050 470 C1030 440 1060 410 1090 425 C1100 395 1150 395 1160 430 C1190 430 1195 470 1165 480 C1150 500 1080 500 1050 470 Z"/>
+      <path d="M935 400 C918 378 940 352 965 364 C975 340 1015 342 1022 370 C1046 372 1048 404 1024 410 C1010 425 955 424 935 400 Z" opacity="0.9"/>
+      <path d="M830 345 C818 330 834 312 852 320 C860 302 890 304 894 324 C912 326 912 350 895 354 C884 364 845 362 830 345 Z" opacity="0.75"/>
+    </g>
+
+    <!-- masts + rigging -->
+    <path d="M880 700 L880 500 M1330 690 L1330 520" class="ink" fill="none"/>
+    <path d="M880 505 L790 690 M880 505 L1000 640 M1330 525 L1440 690 M1330 525 L1240 640" class="thin" opacity="0.7"/>
+    <!-- flag -->
+    <path d="M880 500 L880 470" class="ink"/>
+    <g transform="translate(880 470)">
+      <path d="M0 0 L52 6 L48 36 L0 32 Z" fill="#B23A2E" class="ink"/>
+      <path d="M1 10 L51 15 L50 26 L1 22 Z" fill="#F2C14E"/>
+    </g>
+
+    <!-- smokestack -->
+    <path d="M1080 640 L1088 500 L1150 500 L1158 640 Z" fill="#C0392B" class="ink"/>
+    <path d="M1086 530 L1152 530 L1150 500 L1088 500 Z" fill="#2E2117"/>
+    <path d="M1100 520 L1104 630" stroke="#FFFFFF" stroke-width="6" opacity="0.35" stroke-linecap="round"/>
+
+    <!-- cabin -->
+    <path d="M930 700 L930 630 Q930 618 942 618 L1290 618 Q1302 618 1302 630 L1302 700 Z" fill="#FFF8EA" class="ink"/>
+    <path d="M915 622 L1318 622" class="ink"/>
+    <g fill="#9FC6E3" class="ink" stroke-width="4">
+      <rect x="958" y="642" width="34" height="30" rx="8"/>
+      <rect x="1012" y="642" width="34" height="30" rx="8"/>
+      <rect x="1180" y="642" width="34" height="30" rx="8"/>
+      <rect x="1234" y="642" width="34" height="30" rx="8"/>
+    </g>
+    <path d="M1070 700 L1070 650 Q1070 640 1080 640 L1100 640 Q1110 640 1110 650 L1110 700" fill="#7A5230" class="ink"/>
+
+    <!-- hull -->
+    <path d="M800 690 L1450 676 C1440 712 1418 748 1386 776 L868 776 C838 760 812 728 800 690 Z" fill="#2E3A4A" class="ink"/>
+    <path d="M806 708 L1440 696" stroke="#C0392B" stroke-width="12"/>
+    <path d="M820 742 C980 748 1200 748 1400 740" fill="none" stroke="url(#dots)"/>
+    <path d="M846 750 L1396 744 C1390 756 1384 766 1376 776 L868 776 C860 768 852 760 846 750 Z" fill="url(#dots)"/>
+    <!-- portholes -->
+    <g fill="#F4B942" class="ink" stroke-width="4">
+      <circle cx="930" cy="728" r="9"/><circle cx="1010" cy="728" r="9"/>
+      <circle cx="1090" cy="727" r="9"/><circle cx="1170" cy="726" r="9"/>
+      <circle cx="1250" cy="725" r="9"/><circle cx="1330" cy="724" r="9"/>
+    </g>
+    <!-- name on bow -->
+    <text x="1360" y="716" class="head" font-size="20" fill="#FFF8EA" text-anchor="middle">CEBU</text>
+
+    <!-- bow foam + water line -->
+    <g class="ink" fill="#FFFFFF">
+      <path d="M1380 780 C1420 760 1470 770 1490 790 C1460 792 1440 800 1410 798 C1395 796 1385 790 1380 780 Z"/>
+      <path d="M840 782 C810 770 770 776 755 792 C780 796 800 800 830 798 Z"/>
+    </g>
+    <!-- reflection -->
+    <path d="M880 800 L1380 800" stroke="#16384F" stroke-width="16" opacity="0.5" stroke-linecap="round"/>
+    <path d="M940 826 L1320 826" stroke="#16384F" stroke-width="10" opacity="0.35" stroke-linecap="round"/>
+  </g>
+
+  <!-- ============ UI OVERLAY (layout per design 5A) ============ -->
+  <!-- top bar -->
+  <rect width="1920" height="64" fill="#F3E9D2" opacity="0.92"/>
+  <text x="64" y="42" class="head" font-size="24" fill="#7A6650">4 Years, 13 Days</text>
+  <g transform="translate(760 18)">
+    <rect width="300" height="30" rx="15" fill="#1F4E79"/>
+    <text x="150" y="21" class="body" font-size="17" fill="#FFF8EA" text-anchor="middle">Member 2 · Exile</text>
+  </g>
+  <g transform="translate(1660 14)" class="thin" stroke-width="3">
+    <circle cx="20" cy="18" r="14" fill="#9E2A2B"/><circle cx="60" cy="18" r="14" fill="#1F4E79" stroke-dasharray="4 4"/>
+    <circle cx="100" cy="18" r="14" fill="none"/><circle cx="140" cy="18" r="14" fill="none"/>
+  </g>
+
+  <!-- headline -->
+  <g transform="translate(64 120)">
+    <text class="head" font-size="68" fill="#1F4E79" stroke="#FFF8EA" stroke-width="10" paint-order="stroke">Exiled to Dapitan</text>
+  </g>
+
+  <!-- date card -->
+  <g transform="translate(1560 96) rotate(3)">
+    <rect width="290" height="104" rx="6" fill="#FFF8EA" class="ink"/>
+    <text x="145" y="44" class="hand" font-size="26" fill="#7A6650" text-anchor="middle">July 14 → 17</text>
+    <text x="145" y="84" class="head" font-size="34" fill="#2E2117" text-anchor="middle">1892</text>
+  </g>
+
+  <!-- labels with leader lines -->
+  <g class="hand" font-size="30" fill="#2E2117">
+    <path d="M1190 430 C1230 400 1260 392 1300 392" class="thin" stroke-width="3"/>
+    <text x="1308" y="402">steamer Cebu</text>
+    <path d="M1660 520 C1680 470 1700 450 1730 440" class="thin" stroke-width="3"/>
+    <text x="1650" y="430">Dapitan</text>
+  </g>
+
+  <!-- caption card -->
+  <g transform="translate(64 852)">
+    <rect width="640" height="150" rx="10" fill="#FFF8EA" class="ink" stroke-width="5"/>
+    <rect x="0" y="0" width="14" height="150" rx="4" fill="#1F4E79"/>
+    <text class="body" font-size="29" fill="#2E2117">
+      <tspan x="40" y="52">Under heavy guard, Rizal was shipped</tspan>
+      <tspan x="40" y="90">south. In Dapitan he was handed to</tspan>
+      <tspan x="40" y="128">Capt. Ricardo Carnicero.</tspan>
+    </text>
+  </g>
+
+  <!-- source tag -->
+  <text x="1856" y="1050" class="body" font-size="18" fill="#FFF8EA" text-anchor="end" opacity="0.85">p. 102</text>
+  <!-- progress line -->
+  <rect y="1074" width="1920" height="6" fill="#2E2117" opacity="0.25"/>
+  <rect y="1074" width="620" height="6" fill="#1F4E79"/>
+</svg>

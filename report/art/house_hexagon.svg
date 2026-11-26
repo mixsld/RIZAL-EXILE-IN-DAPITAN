@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 440">
+  <defs>
+    <pattern id="house_hexagon-bamboo" width="18" height="40" patternUnits="userSpaceOnUse"><rect width="18" height="40" fill="#D9B978"/><path d="M0 0 V40" stroke="#9C7A3E" stroke-width="3"/><path d="M0 20 H6" stroke="#9C7A3E" stroke-width="2"/></pattern>
+    <pattern id="house_hexagon-bamboo2" width="18" height="40" patternUnits="userSpaceOnUse"><rect width="18" height="40" fill="#C4A365"/><path d="M0 0 V40" stroke="#8C6C34" stroke-width="3"/></pattern>
+    <pattern id="house_hexagon-thatch" width="30" height="16" patternUnits="userSpaceOnUse"><rect width="30" height="16" fill="#B98F4F"/><path d="M0 14 Q8 6 15 14 Q22 6 30 14" fill="none" stroke="#8A6630" stroke-width="3"/></pattern>
+    <pattern id="house_hexagon-thatch2" width="30" height="16" patternUnits="userSpaceOnUse"><rect width="30" height="16" fill="#A27B3F"/><path d="M0 14 Q8 6 15 14 Q22 6 30 14" fill="none" stroke="#7A5A28" stroke-width="3"/></pattern>
+  </defs>
+  <ellipse cx="210" cy="420" rx="170" ry="16" fill="#2E2117" opacity=".2"/>
+  <g stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M110 330 V416 M310 330 V416 M210 330 V416" fill="none" stroke="#7A5230" stroke-width="12"/>
+    <!-- three visible faces of a six-sided hut -->
+    <path d="M80 300 V196 L140 214 V324 Z" fill="url(#house_hexagon-bamboo2)"/>
+    <path d="M140 324 V214 H280 V324 Z" fill="url(#house_hexagon-bamboo)"/>
+    <path d="M280 324 V214 L340 196 V300 Z" fill="url(#house_hexagon-bamboo2)"/>
+    <path d="M74 300 L140 324 H280 L346 300 L346 314 L280 340 H140 L74 314 Z" fill="#8B5A2B"/>
+    <!-- coop door + perch -->
+    <path d="M186 324 V250 H234 V324 Z" fill="#6E4520"/>
+    <path d="M160 360 L186 324 M234 324 L260 360" fill="none" stroke-width="5"/>
+    <!-- six-faceted roof -->
+    <path d="M44 206 L210 60 L130 228 Z" fill="url(#house_hexagon-thatch2)"/>
+    <path d="M130 228 L210 60 L290 228 Z" fill="url(#house_hexagon-thatch)"/>
+    <path d="M290 228 L210 60 L376 206 Z" fill="url(#house_hexagon-thatch2)"/>
+    <path d="M210 60 V40" fill="none" stroke-width="8"/>
+  </g>
+  <g transform="translate(352 38)">
+    <circle r="34" fill="#FFF8EA" stroke="#2E2117" stroke-width="5"/>
+    <path d="M18 0 L9 15.6 L-9 15.6 L-18 0 L-9 -15.6 L9 -15.6 Z" fill="#3E6B3A" stroke="#2E2117" stroke-width="4" stroke-linejoin="round"/>
+  </g>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="plaza_before_after-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BFE0EA"/><stop offset="1" stop-color="#F6EFD8"/></linearGradient>
+    <pattern id="plaza_before_after-dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="7" cy="7" r="2.3" fill="#2E2117" opacity=".13"/></pattern>
+    <pattern id="plaza_before_after-mud" width="40" height="30" patternUnits="userSpaceOnUse"><rect width="40" height="30" fill="#8A7550"/><ellipse cx="12" cy="10" rx="9" ry="4" fill="#6F5C3C"/><ellipse cx="30" cy="22" rx="7" ry="3" fill="#9C8A62"/></pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#plaza_before_after-sky)"/>
+  <rect width="1920" height="420" fill="url(#plaza_before_after-dots)" opacity=".5"/>
+  <!-- church at the back -->
+  <g stroke="#2E2117" stroke-width="6" stroke-linejoin="round">
+    <path d="M800 560 V300 H1120 V560 Z" fill="#F1E3C6"/><path d="M780 304 L960 190 L1140 304 Z" fill="#E1CDA6"/>
+    <path d="M960 190 V130 M936 152 H984" fill="none" stroke-width="8"/>
+    <path d="M910 560 V440 Q960 390 1010 440 V560 Z" fill="#6E4520"/><circle cx="960" cy="300" r="22" fill="#9FC6E3" stroke-width="4"/>
+  </g>
+  <!-- ===== AFTER: the remodeled plaza ===== -->
+  <path d="M0 560 H1920 V1080 H0 Z" fill="#9CC27A" stroke="#2E2117" stroke-width="6"/>
+  <path d="M760 560 L1160 560 L1500 1080 L420 1080 Z" fill="#E9D7AE" stroke="#2E2117" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M0 760 C400 740 1500 740 1920 760 L1920 820 C1500 800 400 800 0 820 Z" fill="#E9D7AE" stroke="#2E2117" stroke-width="5"/>
+  <!-- relief map of Mindanao (raised, with low border) -->
+  <g id="relief-map" transform="translate(1040 940)" stroke="#2E2117" stroke-width="6" stroke-linejoin="round">
+    <ellipse cx="0" cy="0" rx="260" ry="90" fill="#C9B08A"/>
+    <ellipse cx="0" cy="-10" rx="240" ry="78" fill="#8CC4DC"/>
+    <path d="M-160 -10 C-120 -40 -60 -60 0 -54 C60 -70 120 -50 170 -20 C150 10 110 30 60 26 C20 46 -40 40 -80 20 C-120 30 -160 20 -160 -10 Z" fill="#7EA85E"/>
+    <path d="M-60 -30 L-30 -50 L0 -30 M40 -40 L70 -58 L96 -36" fill="none" stroke-width="4"/>
+  </g>
+  <!-- waterworks: pipe + fountain -->
+  <g id="waterworks" stroke="#2E2117" stroke-width="6" stroke-linejoin="round">
+    <path d="M1920 700 H1640 V860" fill="none" stroke="#7B8D99" stroke-width="18"/>
+    <path d="M1920 700 H1640 V860" fill="none" stroke-width="4" opacity=".5"/>
+    <ellipse cx="1600" cy="900" rx="150" ry="48" fill="#C9B08A"/><ellipse cx="1600" cy="892" rx="128" ry="36" fill="#8CC4DC"/>
+    <path d="M1600 880 V800" fill="none" stroke="#7B8D99" stroke-width="14"/>
+    <path d="M1600 800 C1560 770 1540 800 1530 850 M1600 800 C1640 770 1660 800 1670 850" fill="none" stroke="#8CC4DC" stroke-width="8"/>
+  </g>
+  <!-- young trees + benches -->
+  <g stroke="#2E2117" stroke-width="5" stroke-linejoin="round">
+    <path d="M200 700 V640" fill="none" stroke="#8B5A2B" stroke-width="10"/><circle cx="200" cy="610" r="44" fill="#5A9A4C"/>
+    <path d="M1720 640 V580" fill="none" stroke="#8B5A2B" stroke-width="10"/><circle cx="1720" cy="550" r="44" fill="#5A9A4C"/>
+    <path d="M600 700 H760 V716 H600 Z M612 716 V740 M748 716 V740" fill="#8B5A2B"/>
+    <path d="M1160 700 H1320 V716 H1160 Z M1172 716 V740 M1308 716 V740" fill="#8B5A2B"/>
+  </g>
+  <!-- ===== BEFORE: marshy, muddy ground (revealed/hidden by the slider) ===== -->
+  <g id="before">
+    <path d="M0 560 H1920 V1080 H0 Z" fill="url(#plaza_before_after-mud)" stroke="#2E2117" stroke-width="6"/>
+    <g fill="#6F8F7A" stroke="#2E2117" stroke-width="5" opacity=".9">
+      <ellipse cx="420" cy="860" rx="260" ry="60"/><ellipse cx="1300" cy="940" rx="320" ry="70"/><ellipse cx="1500" cy="700" rx="180" ry="40"/>
+    </g>
+    <g fill="none" stroke="#4E6B3A" stroke-width="6" stroke-linecap="round">
+      <path d="M300 860 V800 M320 860 L330 790 M520 840 V770 M540 850 L556 780 M1180 930 V860 M1200 930 L1214 850 M1420 920 V850 M1600 700 V640 M1620 700 L1636 630"/>
+    </g>
+    <g fill="#2E2117" opacity=".6"><circle cx="700" cy="660" r="3"/><circle cx="720" cy="650" r="3"/><circle cx="1000" cy="620" r="3"/><circle cx="1030" cy="640" r="3"/></g>
+  </g>
+</svg>

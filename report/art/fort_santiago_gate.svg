@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="fort_santiago_gate-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9AA4AE"/><stop offset="1" stop-color="#C9CDCF"/></linearGradient>
+    <linearGradient id="fort_santiago_gate-stone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A39D8F"/><stop offset="1" stop-color="#857F72"/></linearGradient>
+    <pattern id="fort_santiago_gate-dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="7" cy="7" r="2.4" fill="#2E2117" opacity=".16"/></pattern>
+    <pattern id="fort_santiago_gate-moss" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="5" cy="6" r="3" fill="#6E7F58" opacity=".35"/><circle cx="15" cy="16" r="2" fill="#6E7F58" opacity=".3"/></pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#fort_santiago_gate-sky)"/>
+  <rect width="1920" height="600" fill="url(#fort_santiago_gate-dots)" opacity=".6"/>
+  <!-- heavy clouds -->
+  <g fill="#B7BDC2" stroke="#2E2117" stroke-width="5" stroke-linejoin="round">
+    <path d="M140 210 C110 210 102 176 130 168 C128 136 170 124 188 146 C206 116 262 120 270 156 C300 150 322 176 306 196 C318 216 296 228 276 222 C250 236 220 230 206 220 C184 232 156 226 146 214 Z"/>
+    <path d="M1500 170 C1478 170 1472 142 1494 136 C1494 112 1528 104 1542 122 C1556 98 1600 102 1606 128 C1630 124 1646 144 1634 160 C1642 176 1626 186 1610 182 C1588 194 1564 188 1554 180 C1534 190 1512 186 1504 176 Z"/>
+  </g>
+  <!-- ground + moat bridge -->
+  <path d="M0 860 H1920 V1080 H0 Z" fill="#8F8A7A" stroke="#2E2117" stroke-width="6"/>
+  <rect y="860" width="1920" height="220" fill="url(#fort_santiago_gate-dots)"/>
+  <path d="M760 860 L720 1080 H1200 L1160 860 Z" fill="#A08A68" stroke="#2E2117" stroke-width="6" stroke-linejoin="round"/>
+  <g stroke="#7A6650" stroke-width="4"><path d="M752 900 H1168 M744 950 H1176 M736 1000 H1184 M728 1050 H1192"/></g>
+
+  <g stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- side walls with crenellations -->
+    <path d="M0 860 V420 H60 V380 H120 V420 H180 V380 H240 V420 H300 V380 H360 V420 H420 V380 H480 V420 H560 V860 Z" fill="url(#fort_santiago_gate-stone)"/>
+    <path d="M1360 860 V420 H1440 V380 H1500 V420 H1560 V380 H1620 V420 H1680 V380 H1740 V420 H1800 V380 H1860 V420 H1920 V860 Z" fill="url(#fort_santiago_gate-stone)"/>
+    <!-- gate block -->
+    <path d="M560 860 V300 H1360 V860 Z" fill="#B3AB9A"/>
+    <path d="M520 304 H1400 V268 H520 Z" fill="#9C9483"/>
+    <!-- baroque pediment -->
+    <path d="M700 268 C700 200 780 180 820 150 C860 120 900 110 960 70 C1020 110 1060 120 1100 150 C1140 180 1220 200 1220 268 Z" fill="#B3AB9A"/>
+    <path d="M944 70 V30 M926 46 H962" fill="none"/>
+    <!-- medallion (St. James emblem, simplified) -->
+    <ellipse cx="960" cy="200" rx="86" ry="60" fill="#D8CFBC"/>
+    <path d="M900 222 C914 196 936 188 960 190 L986 170 C996 176 996 186 990 196 L1006 214 L994 224 L978 210 C960 214 940 222 928 240 Z" fill="#8E8572" stroke-width="4"/>
+    <path d="M950 186 L944 150 L962 150" fill="none" stroke-width="4"/>
+    <!-- pilasters -->
+    <path d="M640 860 V320 H700 V860 Z M1220 860 V320 H1280 V860 Z" fill="#C2BAA8"/>
+    <!-- arch opening -->
+    <path d="M760 860 V520 Q960 340 1160 520 V860 Z" fill="#2A2622"/>
+  </g>
+  <!-- stone joints + moss -->
+  <g fill="none" stroke="#6E6859" stroke-width="3" opacity=".7">
+    <path d="M0 500 H560 M0 580 H560 M0 660 H560 M0 740 H560 M0 820 H560 M1360 500 H1920 M1360 580 H1920 M1360 660 H1920 M1360 740 H1920 M1360 820 H1920"/>
+    <path d="M120 420 V500 M300 500 V580 M200 580 V660 M420 660 V740 M100 740 V820 M1500 420 V500 M1700 500 V580 M1580 580 V660 M1820 660 V740 M1460 740 V820"/>
+    <path d="M560 400 H760 M1160 400 H1360 M560 500 H640 M1280 500 H1360 M560 620 H640 M1280 620 H1360 M560 740 H640 M1280 740 H1360"/>
+  </g>
+  <rect width="1920" height="860" fill="url(#fort_santiago_gate-moss)" opacity=".7"/>
+  <!-- portcullis bars (slide down in the scene) -->
+  <g id="bars" stroke="#2E2117" stroke-width="6" stroke-linejoin="round">
+    <path d="M770 520 Q960 352 1150 520" fill="none" stroke="#1C1917" stroke-width="0"/>
+    <g fill="#3B3632">
+      <rect x="790" y="440" width="22" height="420"/><rect x="850" y="400" width="22" height="460"/><rect x="910" y="380" width="22" height="480"/>
+      <rect x="970" y="380" width="22" height="480"/><rect x="1030" y="400" width="22" height="460"/><rect x="1090" y="440" width="22" height="420"/>
+      <rect x="770" y="560" width="380" height="20"/><rect x="770" y="700" width="380" height="20"/>
+    </g>
+    <g fill="#5A534C" stroke-width="3"><path d="M790 860 L801 890 L812 860 M850 860 L861 890 L872 860 M910 860 L921 890 L932 860 M970 860 L981 890 L992 860 M1030 860 L1041 890 L1052 860 M1090 860 L1101 890 L1112 860"/></g>
+  </g>
+  <!-- torches -->
+  <g stroke="#2E2117" stroke-width="5" stroke-linejoin="round">
+    <path d="M600 600 V680 M1320 600 V680" fill="none" stroke-width="8"/>
+    <path d="M584 600 H616 L610 580 H590 Z M1304 600 H1336 L1330 580 H1310 Z" fill="#5A3A1C"/>
+    <path d="M600 580 C584 560 596 536 600 520 C606 540 618 556 600 580 Z M1320 580 C1304 560 1316 536 1320 520 C1326 540 1338 556 1320 580 Z" fill="#F4B942"/>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="sunset_farewell-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5B4A7A"/><stop offset=".45" stop-color="#E07A5F"/><stop offset=".8" stop-color="#F4B860"/></linearGradient>
+    <linearGradient id="sunset_farewell-sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C97B63"/><stop offset=".35" stop-color="#4D5F8C"/><stop offset="1" stop-color="#2C3B63"/></linearGradient>
+    <pattern id="sunset_farewell-dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="7" cy="7" r="2.3" fill="#2E2117" opacity=".14"/></pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#sunset_farewell-sky)"/>
+  <rect width="1920" height="600" fill="url(#sunset_farewell-dots)" opacity=".5"/>
+  <!-- setting sun -->
+  <circle cx="1340" cy="600" r="150" fill="#FFD27A" stroke="#2E2117" stroke-width="6"/>
+  <g fill="#F7C46C" stroke="#2E2117" stroke-width="5" stroke-linejoin="round" opacity=".9">
+    <path d="M300 260 C270 260 262 226 290 218 C288 186 330 174 348 196 C366 166 422 170 430 206 C460 200 482 226 466 246 C478 266 456 278 436 272 C410 286 380 280 366 270 C344 282 316 276 306 264 Z"/>
+    <path d="M1600 200 C1582 200 1578 178 1596 174 C1596 154 1624 148 1634 164 C1646 144 1682 148 1686 170 C1706 168 1718 184 1708 198 C1714 210 1700 218 1686 214 C1668 222 1648 218 1640 212 C1624 220 1606 216 1600 206 Z"/>
+  </g>
+  <g fill="none" stroke="#2E2117" stroke-width="4" stroke-linecap="round"><path d="M760 300 q14 -14 28 0 q14 -14 28 0"/><path d="M840 340 q10 -10 20 0 q10 -10 20 0"/></g>
+  <!-- sea -->
+  <path d="M0 600 H1920 V1080 H0 Z" fill="url(#sunset_farewell-sea)"/>
+  <path d="M0 600 H1920" stroke="#2E2117" stroke-width="6"/>
+  <g fill="#FFD27A" opacity=".75"><rect x="1240" y="630" width="200" height="10" rx="5"/><rect x="1270" y="660" width="140" height="10" rx="5"/><rect x="1290" y="690" width="100" height="10" rx="5"/><rect x="1310" y="720" width="60" height="8" rx="4"/></g>
+  <!-- beach (left foreground) -->
+  <path d="M0 760 C300 730 560 760 820 820 C980 860 1060 960 1100 1080 L0 1080 Z" fill="#E8C98E" stroke="#2E2117" stroke-width="6" stroke-linejoin="round"/>
+  <rect y="760" width="1100" height="320" fill="url(#sunset_farewell-dots)" opacity=".45"/>
+  <!-- palm silhouettes -->
+  <g fill="#3A2A30" stroke="#2E2117" stroke-width="5" stroke-linejoin="round">
+    <path d="M150 800 C140 700 150 600 180 520 L196 524 C170 600 164 700 172 800 Z"/>
+    <path d="M186 524 C130 490 70 504 40 540 C90 520 130 524 186 524 Z"/><path d="M186 524 C230 480 300 484 330 520 C280 506 236 510 186 524 Z"/>
+    <path d="M186 524 C176 470 210 436 250 434 C224 462 204 492 186 524 Z"/><path d="M186 524 C140 476 90 470 70 486 C116 494 150 504 186 524 Z"/>
+  </g>
+</svg>

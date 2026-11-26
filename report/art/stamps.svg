@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 420">
+  <defs>
+    <filter id="stamps-rough" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="4" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -0.9 1.35" result="m"/>
+      <feComposite in="SourceGraphic" in2="m" operator="in"/>
+    </filter>
+  </defs>
+
+  <!-- ARRESTED -->
+  <g id="stamp-arrested" transform="translate(230 210) rotate(-9)" filter="url(#stamps-rough)">
+    <rect x="-210" y="-74" width="420" height="148" rx="14" fill="none" stroke="#B23A2E" stroke-width="12"/>
+    <rect x="-192" y="-56" width="384" height="112" rx="8" fill="none" stroke="#B23A2E" stroke-width="4"/>
+    <text y="26" text-anchor="middle" font-family="'Arial Black', Impact, sans-serif" font-size="62" letter-spacing="2" fill="#B23A2E">ARRESTED</text>
+  </g>
+
+  <!-- ACCEPTED -->
+  <g id="stamp-accepted" transform="translate(700 210) rotate(7)" filter="url(#stamps-rough)">
+    <rect x="-210" y="-74" width="420" height="148" rx="14" fill="none" stroke="#2F6B3A" stroke-width="12"/>
+    <rect x="-192" y="-56" width="384" height="112" rx="8" fill="none" stroke="#2F6B3A" stroke-width="4"/>
+    <text y="26" text-anchor="middle" font-family="'Arial Black', Impact, sans-serif" font-size="62" letter-spacing="2" fill="#2F6B3A">ACCEPTED</text>
+  </g>
+
+  <!-- passport stamps -->
+  <g id="stamp-1" transform="translate(1040 210) rotate(-8)" filter="url(#stamps-rough)">
+    <circle r="120" fill="#FFF8EA" stroke="#9E2A2B" stroke-width="12"/><circle r="98" fill="none" stroke="#9E2A2B" stroke-width="4" stroke-dasharray="10 8"/>
+    <text y="-30" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="30" fill="#9E2A2B">MANILA</text>
+    <text y="40" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="76" fill="#9E2A2B">1</text>
+    <text y="78" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#9E2A2B">LA LIGA · 1892</text>
+  </g>
+  <g id="stamp-2" transform="translate(1300 210) rotate(6)" filter="url(#stamps-rough)">
+    <circle r="120" fill="#FFF8EA" stroke="#1F4E79" stroke-width="12"/><circle r="98" fill="none" stroke="#1F4E79" stroke-width="4" stroke-dasharray="10 8"/>
+    <text y="-30" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="30" fill="#1F4E79">EXILE</text>
+    <text y="40" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="76" fill="#1F4E79">2</text>
+    <text y="78" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#1F4E79">DAPITAN · 1892</text>
+  </g>
+  <g id="stamp-3" transform="translate(1560 210) rotate(-5)" filter="url(#stamps-rough)">
+    <circle r="120" fill="#FFF8EA" stroke="#3E6B3A" stroke-width="12"/><circle r="98" fill="none" stroke="#3E6B3A" stroke-width="4" stroke-dasharray="10 8"/>
+    <text y="-30" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="30" fill="#3E6B3A">DAPITAN</text>
+    <text y="40" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="76" fill="#3E6B3A">3</text>
+    <text y="78" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#3E6B3A">LIFE · 1893</text>
+  </g>
+  <g id="stamp-4" transform="translate(1560 210) rotate(9)" filter="url(#stamps-rough)" opacity="1">
+    <circle r="120" fill="#FFF8EA" stroke="#8A5A0B" stroke-width="12"/><circle r="98" fill="none" stroke="#8A5A0B" stroke-width="4" stroke-dasharray="10 8"/>
+    <text y="-30" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="30" fill="#8A5A0B">FAREWELL</text>
+    <text y="40" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="76" fill="#8A5A0B">4</text>
+    <text y="78" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#8A5A0B">AUG · 1896</text>
+  </g>
+</svg>

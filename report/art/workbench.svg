@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="workbench-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E8D3AA"/><stop offset="1" stop-color="#D8BE8D"/></linearGradient>
+    <linearGradient id="workbench-wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A8743F"/><stop offset="1" stop-color="#8B5A2B"/></linearGradient>
+    <pattern id="workbench-dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="7" cy="7" r="2.3" fill="#2E2117" opacity=".13"/></pattern>
+    <pattern id="workbench-bamboo" width="40" height="40" patternUnits="userSpaceOnUse"><rect width="40" height="40" fill="url(#workbench-wall)"/><path d="M0 0 V40" stroke="#B9965F" stroke-width="3"/></pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#workbench-bamboo)"/>
+  <rect width="1920" height="1080" fill="url(#workbench-dots)" opacity=".6"/>
+  <!-- tool rack -->
+  <g stroke="#2E2117" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M1320 230 H1780 V260 H1320 Z" fill="#8B5A2B"/>
+    <path d="M1380 260 V380 M1360 380 H1400" fill="none" stroke="#6E7A86" stroke-width="10"/>
+    <path d="M1480 260 V400" fill="none" stroke="#8B5A2B" stroke-width="10"/><path d="M1456 380 H1504 L1496 430 H1464 Z" fill="#6E7A86"/>
+    <path d="M1580 260 L1600 360 L1640 350 L1620 260" fill="#C9A26A"/>
+    <path d="M1700 260 V340 C1700 380 1740 380 1740 340" fill="none" stroke="#6E7A86" stroke-width="8"/>
+  </g>
+  <!-- bench -->
+  <g stroke="#2E2117" stroke-width="6" stroke-linejoin="round">
+    <path d="M140 700 H1780 V760 H140 Z" fill="url(#workbench-wood)"/>
+    <path d="M200 760 V1000 H250 V760 M1670 760 V1000 H1720 V760" fill="#7A4E26"/>
+    <path d="M250 900 H1670 V930 H250 Z" fill="#7A4E26"/>
+    <path d="M0 1000 H1920 V1080 H0 Z" fill="#A8764A"/>
+  </g>
+  <!-- ===== brick-making press ===== -->
+  <g id="brick-press" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M300 700 V420 H340 V700 M640 700 V420 H680 V700" fill="#8B5A2B"/>
+    <path d="M280 400 H700 V440 H280 Z" fill="#7A4E26"/>
+    <path d="M380 700 V610 H600 V700 Z" fill="#9C6B3B"/>
+    <path d="M400 620 H580 V690 H400 Z" fill="#B5523B"/>
+    <g id="press-plate"><path d="M470 440 V540 M510 440 V540" fill="none" stroke-width="8"/><path d="M390 540 H590 V580 H390 Z" fill="#6E7A86"/></g>
+    <g id="lever"><path d="M490 430 L760 330" fill="none" stroke="#5A3A1C" stroke-width="18"/><circle cx="760" cy="330" r="20" fill="#8B5A2B"/></g>
+    <circle cx="490" cy="430" r="14" fill="#E8C25A"/>
+  </g>
+  <!-- finished bricks -->
+  <g id="bricks" stroke="#2E2117" stroke-width="5" stroke-linejoin="round">
+    <path d="M760 700 H900 V650 H760 Z M900 700 H1040 V650 H900 Z M830 650 H970 V600 H830 Z" fill="#B5523B"/>
+    <path d="M790 668 H870 M930 668 H1010 M860 618 H940" stroke="#8E3B2A" stroke-width="3"/>
+  </g>
+  <!-- ===== wooden fire-piston lighter ===== -->
+  <g id="lighter" transform="translate(1380 520)" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <ellipse cx="0" cy="178" rx="120" ry="12" fill="#2E2117" opacity=".2" stroke="none"/>
+    <path d="M-40 176 V20 Q-40 0 -20 0 H20 Q40 0 40 20 V176 Z" fill="#B98A57"/>
+    <path d="M-40 60 H40 M-40 130 H40" fill="none" stroke="#8B5A2B" stroke-width="4"/>
+    <g id="plunger"><path d="M-12 0 V-90 H12 V0" fill="#9C6B3B"/><path d="M-50 -90 H50 V-120 H-50 Z" fill="#8B5A2B"/></g>
+    <g id="spark" opacity="0"><path d="M60 40 L90 20 L80 50 L110 46 L84 70 L100 92 L70 80 L64 110 L52 80 Z" fill="#F4B942"/></g>
+  </g>
+</svg>

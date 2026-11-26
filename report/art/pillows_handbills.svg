@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="pillows_handbills-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EAD9B8"/><stop offset="1" stop-color="#DCC59C"/></linearGradient>
+    <pattern id="pillows_handbills-dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="7" cy="7" r="2.3" fill="#2E2117" opacity=".14"/></pattern>
+    <pattern id="pillows_handbills-stripe" width="40" height="40" patternUnits="userSpaceOnUse"><rect width="40" height="40" fill="#FBF3E2"/><rect width="14" height="40" fill="#E8D8F0"/></pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#pillows_handbills-wall)"/>
+  <rect width="1920" height="1080" fill="url(#pillows_handbills-dots)" opacity=".6"/>
+  <!-- floor -->
+  <path d="M0 820 H1920 V1080 H0 Z" fill="#A8764A" stroke="#2E2117" stroke-width="6"/>
+  <g stroke="#7E5632" stroke-width="4"><path d="M0 880 H1920 M0 950 H1920 M0 1020 H1920"/></g>
+  <!-- window with capiz -->
+  <g stroke="#2E2117" stroke-width="6" stroke-linejoin="round">
+    <rect x="160" y="170" width="300" height="360" rx="8" fill="#9FC6E3"/>
+    <path d="M310 170 V530 M160 350 H460" fill="none" stroke-width="5"/>
+    <path d="M200 260 C240 240 270 250 300 240" fill="none" stroke="#FFFFFF" stroke-width="5" opacity=".7"/>
+    <rect x="140" y="530" width="340" height="26" rx="6" fill="#7A5230"/>
+  </g>
+  <!-- bed -->
+  <g stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M620 860 V420 Q620 380 660 380 L1520 380 Q1560 380 1560 420 V860" fill="none" stroke-width="0"/>
+    <!-- headboard -->
+    <path d="M640 760 V330 Q640 290 680 290 L1500 290 Q1540 290 1540 330 V760 Z" fill="#8B5A2B"/>
+    <path d="M700 330 H1480 V560 H700 Z" fill="#9F6B37" stroke-width="5"/>
+    <path d="M1090 300 C1060 250 1120 250 1090 300" fill="#9F6B37"/>
+    <!-- mattress + blanket -->
+    <path d="M560 640 L1620 640 L1660 820 L520 820 Z" fill="url(#pillows_handbills-stripe)"/>
+    <path d="M520 820 L1660 820 L1660 860 L520 860 Z" fill="#6E4520"/>
+    <path d="M560 720 C800 690 1300 690 1630 730 L1660 820 L520 820 Z" fill="#7A3B5E"/>
+    <path d="M600 760 C800 740 1300 740 1620 770" fill="none" stroke="#5C2C47" stroke-width="5"/>
+    <!-- legs -->
+    <path d="M540 860 V920 H580 V860 M1600 860 V920 H1640 V860" fill="#6E4520"/>
+  </g>
+
+  <!-- handbills (hidden inside pillow 1, revealed by the scene) -->
+  <g id="handbills" opacity="0">
+    <g transform="translate(900 470) rotate(-12)" stroke="#2E2117" stroke-width="5" stroke-linejoin="round">
+      <rect x="-140" y="-100" width="280" height="200" fill="#FFFCF2"/>
+      <text x="0" y="-48" text-anchor="middle" font-family="'Palatino Linotype',Georgia,serif" font-weight="700" font-size="34" fill="#2E2117" stroke="none">POBRES</text>
+      <text x="0" y="-8" text-anchor="middle" font-family="'Palatino Linotype',Georgia,serif" font-weight="700" font-size="34" fill="#2E2117" stroke="none">FRAILES</text>
+      <path d="M-100 30 H100 M-100 54 H100 M-100 78 H60" stroke="#B9A57E" stroke-width="5"/>
+    </g>
+    <g transform="translate(1060 430) rotate(10)" stroke="#2E2117" stroke-width="5" stroke-linejoin="round">
+      <rect x="-130" y="-90" width="260" height="180" fill="#FFF8EA"/>
+      <text x="0" y="-30" text-anchor="middle" font-family="'Palatino Linotype',Georgia,serif" font-weight="700" font-size="30" fill="#2E2117" stroke="none">POBRES FRAILES</text>
+      <path d="M-96 10 H96 M-96 34 H96 M-96 58 H40" stroke="#B9A57E" stroke-width="5"/>
+    </g>
+  </g>
+
+  <!-- pillows -->
+  <g id="pillow-1" stroke="#2E2117" stroke-width="6" stroke-linejoin="round">
+    <path d="M700 520 C690 470 720 440 770 446 C860 430 960 430 1050 446 C1100 440 1120 470 1110 520 C1120 580 1100 620 1050 614 C960 628 860 628 770 614 C720 620 690 580 700 520 Z" fill="#FFFCF2"/>
+    <path d="M760 470 C860 460 960 460 1050 470" fill="none" stroke="#D9CBB0" stroke-width="5"/>
+    <path d="M1020 600 C1060 590 1090 560 1094 530" fill="none" stroke="#D9CBB0" stroke-width="5"/>
+  </g>
+  <g id="pillow-2" stroke="#2E2117" stroke-width="6" stroke-linejoin="round">
+    <path d="M1130 520 C1120 470 1150 440 1200 446 C1290 430 1390 430 1480 446 C1530 440 1550 470 1540 520 C1550 580 1530 620 1480 614 C1390 628 1290 628 1200 614 C1150 620 1120 580 1130 520 Z" fill="#FFFCF2"/>
+    <path d="M1190 470 C1290 460 1390 460 1480 470" fill="none" stroke="#D9CBB0" stroke-width="5"/>
+  </g>
+
+  <!-- Lucia's travel trunk -->
+  <g transform="translate(1660 700)" stroke="#2E2117" stroke-width="6" stroke-linejoin="round">
+    <path d="M-10 0 H210 V150 H-10 Z" fill="#8B5A2B"/>
+    <path d="M-16 -4 C-16 -50 216 -50 216 -4 Z" fill="#9F6B37"/>
+    <path d="M40 -40 V150 M160 -40 V150" fill="none" stroke="#5A3A1C" stroke-width="10"/>
+    <rect x="84" y="14" width="32" height="30" rx="4" fill="#E8C25A" stroke-width="4"/>
+    <ellipse cx="100" cy="160" rx="130" ry="12" fill="#2E2117" opacity=".2" stroke="none"/>
+  </g>
+</svg>

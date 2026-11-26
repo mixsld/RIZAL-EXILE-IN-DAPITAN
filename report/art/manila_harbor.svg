@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="manila_harbor-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7D9A0"/><stop offset=".7" stop-color="#FBEBCB"/></linearGradient>
+    <linearGradient id="manila_harbor-sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4C8DB8"/><stop offset="1" stop-color="#22557F"/></linearGradient>
+    <pattern id="manila_harbor-dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="7" cy="7" r="2.4" fill="#2E2117" opacity=".15"/></pattern>
+    <pattern id="manila_harbor-light" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="8" cy="8" r="2.2" fill="#FFFFFF" opacity=".3"/></pattern>
+    <pattern id="manila_harbor-capiz" width="16" height="16" patternUnits="userSpaceOnUse"><rect width="16" height="16" fill="#F4ECD6"/><path d="M0 0 H16 V16" fill="none" stroke="#7A5230" stroke-width="2"/></pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#manila_harbor-sky)"/>
+  <rect width="1920" height="380" fill="url(#manila_harbor-dots)" opacity=".5"/>
+
+  <!-- sun + clouds -->
+  <circle cx="1580" cy="230" r="70" fill="#F4B942" stroke="#2E2117" stroke-width="6"/>
+  <g fill="#FFF8EA" stroke="#2E2117" stroke-width="5" stroke-linejoin="round">
+    <path d="M300 200 C276 200 270 172 292 166 C292 142 326 134 340 152 C354 128 398 132 404 160 C428 156 444 176 432 192 C440 208 424 218 408 214 C386 226 362 220 352 212 C334 222 312 218 304 208 Z"/>
+    <path d="M1180 150 C1162 150 1158 128 1176 124 C1176 104 1204 98 1214 114 C1226 94 1262 98 1266 120 C1286 118 1298 134 1288 148 C1294 160 1280 168 1266 164 C1248 172 1228 168 1220 162 C1204 170 1186 166 1180 156 Z"/>
+  </g>
+  <g fill="none" stroke="#2E2117" stroke-width="4" stroke-linecap="round">
+    <path d="M820 230 q14 -14 28 0 q14 -14 28 0"/><path d="M900 270 q10 -10 20 0 q10 -10 20 0"/>
+  </g>
+
+  <!-- distant mountains -->
+  <path d="M0 520 C160 430 300 470 420 430 C560 380 700 450 860 420 C1000 390 1120 440 1300 410 C1480 380 1700 430 1920 400 L1920 620 L0 620 Z" fill="#A9C2B0" stroke="#2E2117" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M0 520 C160 430 300 470 420 430 C560 380 700 450 860 420 L860 620 L0 620 Z" fill="url(#manila_harbor-dots)" opacity=".5"/>
+
+  <!-- ===== skyline ===== -->
+  <g stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- Hotel Oriente (left, 3 storeys) -->
+    <path d="M70 640 L70 380 L360 380 L360 640 Z" fill="#F4EEDC"/>
+    <path d="M56 384 L374 384 L360 356 L70 356 Z" fill="#B5523B"/>
+    <path d="M200 356 L200 300" fill="none"/><path d="M200 300 L244 310 L240 330 L200 324 Z" fill="#B23A2E" stroke-width="4"/>
+    <g fill="#9FC6E3" stroke-width="4">
+      <path d="M96 470 V430 Q114 410 132 430 V470 Z"/><path d="M162 470 V430 Q180 410 198 430 V470 Z"/><path d="M228 470 V430 Q246 410 264 430 V470 Z"/><path d="M294 470 V430 Q312 410 330 430 V470 Z"/>
+      <path d="M96 560 V520 Q114 500 132 520 V560 Z"/><path d="M162 560 V520 Q180 500 198 520 V560 Z"/><path d="M228 560 V520 Q246 500 264 520 V560 Z"/><path d="M294 560 V520 Q312 500 330 520 V560 Z"/>
+    </g>
+    <path d="M70 486 H360 M70 576 H360" fill="none" stroke-width="4"/>
+    <path d="M186 640 V596 Q215 570 244 596 V640 Z" fill="#7A5230"/>
+
+    <!-- Binondo church: octagonal bell tower + facade -->
+    <path d="M430 640 L430 400 L500 400 L500 640 Z" fill="#E8D7B5"/>
+    <path d="M436 400 L440 330 L490 330 L494 400 Z" fill="#E1CDA6"/>
+    <path d="M444 330 L448 270 L482 270 L486 330 Z" fill="#E8D7B5"/>
+    <path d="M440 272 L465 222 L490 272 Z" fill="#B5523B"/>
+    <path d="M465 222 L465 196 M455 206 H475" fill="none" stroke-width="4"/>
+    <g fill="#5A3E22" stroke-width="4"><path d="M452 380 V350 Q465 336 478 350 V380 Z"/><path d="M456 318 V292 Q465 282 474 292 V318 Z"/></g>
+    <path d="M500 640 L500 450 L640 450 L640 640 Z" fill="#F1E3C6"/>
+    <path d="M492 454 L570 392 L648 454 Z" fill="#E1CDA6"/>
+    <circle cx="570" cy="430" r="14" fill="#9FC6E3" stroke-width="4"/>
+    <path d="M540 640 V560 Q570 524 600 560 V640 Z" fill="#7A5230"/>
+
+    <!-- row of bahay na bato -->
+    <g>
+      <path d="M660 640 V560 H860 V640 Z" fill="#D9C3A0"/>
+      <path d="M650 560 V470 H870 V560 Z" fill="#B5764A"/>
+      <path d="M636 474 L760 420 L884 474 Z" fill="#B5523B"/>
+      <rect x="676" y="490" width="80" height="52" fill="url(#manila_harbor-capiz)" stroke-width="4"/>
+      <rect x="770" y="490" width="80" height="52" fill="url(#manila_harbor-capiz)" stroke-width="4"/>
+      <path d="M736 640 V588 Q760 568 784 588 V640 Z" fill="#7A5230" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M880 640 V580 H1050 V640 Z" fill="#D9C3A0"/>
+      <path d="M872 580 V500 H1058 V580 Z" fill="#C08657"/>
+      <path d="M858 504 L965 456 L1072 504 Z" fill="#A84A35"/>
+      <rect x="892" y="518" width="70" height="46" fill="url(#manila_harbor-capiz)" stroke-width="4"/>
+      <rect x="972" y="518" width="70" height="46" fill="url(#manila_harbor-capiz)" stroke-width="4"/>
+    </g>
+    <g>
+      <path d="M1070 640 V570 H1250 V640 Z" fill="#D9C3A0"/>
+      <path d="M1062 570 V460 H1258 V570 Z" fill="#B5764A"/>
+      <path d="M1046 464 L1160 410 L1274 464 Z" fill="#B5523B"/>
+      <rect x="1080" y="480" width="76" height="56" fill="url(#manila_harbor-capiz)" stroke-width="4"/>
+      <rect x="1166" y="480" width="76" height="56" fill="url(#manila_harbor-capiz)" stroke-width="4"/>
+    </g>
+  </g>
+
+  <!-- palm trees -->
+  <g transform="translate(400 640)">
+    <path d="M0 0 C-4 -50 2 -100 14 -140" fill="none" stroke="#2E2117" stroke-width="20" stroke-linecap="round"/>
+    <path d="M0 0 C-4 -50 2 -100 14 -140" fill="none" stroke="#9B6B3D" stroke-width="10" stroke-linecap="round"/>
+    <g fill="#4F8A3F" stroke="#2E2117" stroke-width="5" stroke-linejoin="round">
+      <path d="M14 -140 C-30 -166 -80 -150 -104 -116 C-64 -132 -30 -132 14 -140 Z"/><path d="M14 -140 C52 -174 110 -166 134 -132 C92 -144 52 -144 14 -140 Z"/>
+      <path d="M14 -140 C2 -190 34 -224 66 -224 C42 -198 26 -170 14 -140 Z"/><path d="M14 -140 C60 -140 92 -108 96 -80 C72 -108 44 -124 14 -140 Z"/>
+    </g>
+  </g>
+
+  <!-- quay / boardwalk -->
+  <g stroke="#2E2117" stroke-width="6" stroke-linejoin="round">
+    <path d="M0 636 H1320 V668 H0 Z" fill="#C9A26A"/>
+    <path d="M0 668 H1320" fill="none"/>
+    <g fill="#8B6238" stroke-width="5"><path d="M60 668 V720 H80 V668"/><path d="M260 668 V720 H280 V668"/><path d="M460 668 V720 H480 V668"/><path d="M660 668 V720 H680 V668"/><path d="M860 668 V720 H880 V668"/><path d="M1060 668 V720 H1080 V668"/><path d="M1260 668 V720 H1280 V668"/></g>
+    <!-- pier toward the ship -->
+    <path d="M1240 636 L1520 700 L1520 724 L1240 668 Z" fill="#B48C55"/>
+    <path d="M1300 676 V740 M1400 698 V756 M1500 720 V770" fill="none" stroke-width="8"/>
+    <!-- bollards + lamp -->
+    <path d="M150 636 V610 Q160 600 170 610 V636 Z" fill="#2E2117"/>
+    <path d="M1150 636 V560" fill="none"/><path d="M1134 560 L1166 560 L1160 530 L1140 530 Z" fill="#F4B942" stroke-width="4"/>
+  </g>
+
+  <!-- sea -->
+  <path d="M0 668 L1920 668 L1920 1080 L0 1080 Z" fill="url(#manila_harbor-sea)"/>
+  <path d="M1320 668 L1920 668" stroke="#2E2117" stroke-width="6"/>
+  <rect y="800" width="1920" height="280" fill="url(#manila_harbor-light)" opacity=".5"/>
+  <g fill="none" stroke="#EAF3FA" stroke-width="5" stroke-linecap="round" opacity=".85">
+    <path d="M120 760 q30 -18 60 0 t60 0"/><path d="M560 820 q30 -18 60 0 t60 0 t60 0"/><path d="M980 900 q30 -18 60 0 t60 0"/><path d="M1600 960 q30 -18 60 0 t60 0"/>
+  </g>
+  <!-- reflections of buildings -->
+  <g opacity=".22" fill="#1A3550"><rect x="80" y="676" width="270" height="22" rx="10"/><rect x="440" y="684" width="190" height="16" rx="8"/><rect x="660" y="676" width="560" height="18" rx="9"/></g>
+
+  <!-- small banca -->
+  <g transform="translate(700 860)" stroke="#2E2117" stroke-width="5" stroke-linejoin="round">
+    <path d="M-110 0 C-60 26 60 26 110 0 C80 -8 -80 -8 -110 0 Z" fill="#B5523B"/>
+    <path d="M-90 30 L90 30 M-60 0 L-60 30 M60 0 L60 30" fill="none" stroke-width="4"/>
+    <path d="M0 -6 L0 -110" fill="none"/><path d="M4 -104 L70 -20 L4 -20 Z" fill="#FFF8EA"/>
+  </g>
+</svg>

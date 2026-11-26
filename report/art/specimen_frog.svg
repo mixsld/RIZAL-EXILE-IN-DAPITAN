@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 330">
+  <defs>
+    <radialGradient id="specimen_frog-body" cx=".45" cy=".35" r=".7"><stop offset="0" stop-color="#D27F52"/><stop offset="1" stop-color="#9A4C2E"/></radialGradient>
+    <pattern id="specimen_frog-dots" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="6" cy="6" r="2" fill="#4A1E0E" opacity=".22"/></pattern>
+  </defs>
+  <ellipse cx="200" cy="306" rx="150" ry="14" fill="#2E2117" opacity=".2"/>
+  <g id="frog" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- back legs folded with webbed feet -->
+    <path d="M80 250 C40 240 30 200 70 180 C100 166 130 190 130 220 Z" fill="#A9573A"/>
+    <path d="M320 250 C360 240 370 200 330 180 C300 166 270 190 270 220 Z" fill="#A9573A"/>
+    <path d="M70 262 L30 286 L54 290 L46 306 L78 294 L84 308 L104 288 L112 270 Z" fill="#E8873A"/>
+    <path d="M330 262 L370 286 L346 290 L354 306 L322 294 L316 308 L296 288 L288 270 Z" fill="#E8873A"/>
+    <!-- body -->
+    <path d="M200 92 C276 92 318 150 316 210 C314 262 266 290 200 290 C134 290 86 262 84 210 C82 150 124 92 200 92 Z" fill="url(#specimen_frog-body)"/>
+    <path d="M200 92 C276 92 318 150 316 210 C314 262 266 290 200 290 C134 290 86 262 84 210 C82 150 124 92 200 92 Z" fill="url(#specimen_frog-dots)" stroke="none"/>
+    <path d="M140 210 C150 262 250 262 260 210 C250 240 150 240 140 210 Z" fill="#F4E3A6" stroke-width="4"/>
+    <!-- front legs + toe pads -->
+    <path d="M130 240 C120 260 112 276 104 290" fill="none" stroke-width="16"/>
+    <path d="M130 240 C120 260 112 276 104 290" fill="none" stroke="#B5603E" stroke-width="7"/>
+    <path d="M270 240 C280 260 288 276 296 290" fill="none" stroke-width="16"/>
+    <path d="M270 240 C280 260 288 276 296 290" fill="none" stroke="#B5603E" stroke-width="7"/>
+    <g fill="#E8873A" stroke-width="4"><circle cx="90" cy="298" r="9"/><circle cx="106" cy="302" r="9"/><circle cx="120" cy="298" r="9"/><circle cx="280" cy="298" r="9"/><circle cx="294" cy="302" r="9"/><circle cx="310" cy="298" r="9"/></g>
+    <!-- eyes -->
+    <circle cx="148" cy="104" r="40" fill="url(#specimen_frog-body)"/><circle cx="252" cy="104" r="40" fill="url(#specimen_frog-body)"/>
+    <circle cx="148" cy="104" r="26" fill="#F4E1A0" stroke-width="4"/><circle cx="252" cy="104" r="26" fill="#F4E1A0" stroke-width="4"/>
+    <ellipse cx="152" cy="106" rx="9" ry="16" fill="#1C1F2A" stroke="none"/><ellipse cx="256" cy="106" rx="9" ry="16" fill="#1C1F2A" stroke="none"/>
+    <circle cx="156" cy="98" r="4" fill="#fff" stroke="none"/><circle cx="260" cy="98" r="4" fill="#fff" stroke="none"/>
+    <!-- smile + nostrils -->
+    <path d="M150 168 Q200 200 250 168" fill="none" stroke-width="5"/>
+    <circle cx="190" cy="146" r="3" fill="#2E2117" stroke="none"/><circle cx="210" cy="146" r="3" fill="#2E2117" stroke="none"/>
+    <!-- yellowish streaks along the sides -->
+    <path d="M92 200 C96 226 106 244 122 256" fill="none" stroke="#F2CF5B" stroke-width="8"/>
+    <path d="M308 200 C304 226 294 244 278 256" fill="none" stroke="#F2CF5B" stroke-width="8"/>
+    <!-- spots -->
+    <g fill="#6E3018" stroke="none"><ellipse cx="120" cy="190" rx="10" ry="7"/><ellipse cx="282" cy="196" rx="12" ry="8"/><ellipse cx="200" cy="128" rx="9" ry="6"/></g>
+  </g>
+</svg>

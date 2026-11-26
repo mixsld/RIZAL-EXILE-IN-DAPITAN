@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="malacanang_door-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3EBDA"/><stop offset="1" stop-color="#E4D6BA"/></linearGradient>
+    <linearGradient id="malacanang_door-wood" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6E4520"/><stop offset=".5" stop-color="#8B5A2B"/><stop offset="1" stop-color="#6E4520"/></linearGradient>
+    <radialGradient id="malacanang_door-glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFE3A0" stop-opacity=".8"/><stop offset="1" stop-color="#FFE3A0" stop-opacity="0"/></radialGradient>
+    <pattern id="malacanang_door-dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="7" cy="7" r="2.3" fill="#2E2117" opacity=".12"/></pattern>
+    <linearGradient id="malacanang_door-inside" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7D48C"/><stop offset="1" stop-color="#D9A45A"/></linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#malacanang_door-wall)"/>
+  <rect width="1920" height="1080" fill="url(#malacanang_door-dots)"/>
+  <!-- floor tiles -->
+  <path d="M0 880 H1920 V1080 H0 Z" fill="#C9B08A" stroke="#2E2117" stroke-width="6"/>
+  <g stroke="#A88F68" stroke-width="4"><path d="M0 940 H1920 M0 1010 H1920 M240 880 L160 1080 M560 880 L520 1080 M960 880 V1080 M1360 880 L1400 1080 M1680 880 L1760 1080"/></g>
+  <!-- red carpet -->
+  <path d="M800 880 L1120 880 L1240 1080 L680 1080 Z" fill="#9E2A2B" stroke="#2E2117" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M830 880 L790 1080 M1090 880 L1130 1080" stroke="#E8C25A" stroke-width="6"/>
+
+  <g stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- columns -->
+    <g fill="#FBF6EA">
+      <path d="M520 880 V300 H600 V880 Z"/><path d="M1320 880 V300 H1400 V880 Z"/>
+      <path d="M500 300 H620 V270 H500 Z M1300 300 H1420 V270 H1300 Z"/>
+      <path d="M500 880 H620 V900 H500 Z M1300 880 H1420 V900 H1300 Z"/>
+    </g>
+    <g fill="none" stroke="#C9B48E" stroke-width="4"><path d="M544 310 V870 M576 310 V870 M1344 310 V870 M1376 310 V870"/></g>
+    <!-- arch + pediment -->
+    <path d="M620 880 V430 Q960 180 1300 430 V880 Z" fill="#E9DCC0"/>
+    <path d="M480 270 L960 120 L1440 270 Z" fill="#F7F0E0"/>
+    <circle cx="960" cy="218" r="40" fill="#E8C25A"/>
+    <path d="M960 190 L968 210 L990 212 L972 226 L978 248 L960 236 L942 248 L948 226 L930 212 L952 210 Z" fill="#B23A2E" stroke-width="3"/>
+  </g>
+  <!-- warm light behind the doors -->
+  <path d="M700 880 V470 Q960 260 1220 470 V880 Z" fill="url(#malacanang_door-inside)" stroke="#2E2117" stroke-width="6"/>
+  <!-- double doors (open by rotating in the scene) -->
+  <g stroke="#2E2117" stroke-width="6" stroke-linejoin="round">
+    <g id="door-left">
+      <path d="M700 880 V470 Q830 365 960 345 V880 Z" fill="url(#malacanang_door-wood)"/>
+      <path d="M740 840 V520 Q840 440 920 420 V840 Z" fill="none" stroke="#5A3A1C" stroke-width="5"/>
+      <path d="M760 640 H900 M760 740 H900" stroke="#5A3A1C" stroke-width="5"/>
+      <circle cx="930" cy="640" r="10" fill="#E8C25A" stroke-width="4"/>
+    </g>
+    <g id="door-right">
+      <path d="M1220 880 V470 Q1090 365 960 345 V880 Z" fill="url(#malacanang_door-wood)"/>
+      <path d="M1180 840 V520 Q1080 440 1000 420 V840 Z" fill="none" stroke="#5A3A1C" stroke-width="5"/>
+      <path d="M1160 640 H1020 M1160 740 H1020" stroke="#5A3A1C" stroke-width="5"/>
+      <circle cx="990" cy="640" r="10" fill="#E8C25A" stroke-width="4"/>
+    </g>
+  </g>
+  <!-- wall lamps -->
+  <g stroke="#2E2117" stroke-width="5" stroke-linejoin="round">
+    <path d="M440 440 H480 M1440 440 H1480" fill="none"/>
+    <path d="M420 440 L460 440 L452 380 L428 380 Z" fill="#FFE3A0"/><path d="M416 380 H464 L440 360 Z" fill="#2E2117"/>
+    <path d="M1460 440 L1500 440 L1492 380 L1468 380 Z" fill="#FFE3A0"/><path d="M1456 380 H1504 L1480 360 Z" fill="#2E2117"/>
+  </g>
+  <circle cx="440" cy="410" r="90" fill="url(#malacanang_door-glow)"/><circle cx="1480" cy="410" r="90" fill="url(#malacanang_door-glow)"/>
+  <!-- potted plants -->
+  <g stroke="#2E2117" stroke-width="5" stroke-linejoin="round">
+    <path d="M330 880 L300 800 H420 L390 880 Z" fill="#B5523B"/>
+    <path d="M360 800 C320 740 300 700 320 660 C340 700 350 730 360 760 C370 720 380 690 410 670 C410 720 390 760 360 800 Z" fill="#4F8A3F"/>
+    <path d="M1590 880 L1560 800 H1680 L1650 880 Z" fill="#B5523B"/>
+    <path d="M1620 800 C1580 740 1560 700 1580 660 C1600 700 1610 730 1620 760 C1630 720 1640 690 1670 670 C1670 720 1650 760 1620 800 Z" fill="#4F8A3F"/>
+  </g>
+</svg>

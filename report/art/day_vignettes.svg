@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <defs>
+    <pattern id="day_vignettes-dots" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="6" cy="6" r="2" fill="#2E2117" opacity=".13"/></pattern>
+    <radialGradient id="day_vignettes-glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFE3A0" stop-opacity=".9"/><stop offset="1" stop-color="#FFE3A0" stop-opacity="0"/></radialGradient>
+  </defs>
+  <!-- 1 · 5:00 plants and chickens -->
+  <g id="vig-1" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M0 400 C200 380 700 380 900 400 V520 H0 Z" fill="#9CC27A"/>
+    <g fill="#4E8A43"><path d="M180 400 C170 350 150 330 120 320 C150 320 176 340 186 370 C192 330 210 300 240 290 C220 320 206 360 200 400 Z"/><path d="M300 400 C296 360 280 340 256 330 C282 330 300 350 306 380 C312 350 330 330 352 326 C334 346 322 370 318 400 Z"/></g>
+    <!-- watering can -->
+    <path d="M440 330 H540 V400 H440 Z" fill="#7B8D99"/><path d="M540 344 L610 300 L616 312 L548 360 Z" fill="#7B8D99"/><path d="M460 330 C460 290 520 290 520 330" fill="none"/>
+    <g fill="#8CC4DC" stroke-width="3"><circle cx="630" cy="320" r="6"/><circle cx="646" cy="342" r="6"/><circle cx="626" cy="356" r="6"/></g>
+    <!-- chickens -->
+    <path d="M700 420 C660 400 670 350 712 352 C716 320 752 318 758 342 L784 336 L774 360 C786 398 744 432 700 420 Z" fill="#FFF8EA"/><path d="M742 322 L746 306 L758 318" fill="#B23A2E"/><circle cx="748" cy="340" r="4" fill="#2E2117" stroke="none"/>
+    <path d="M780 470 C750 456 758 418 790 420 C794 396 820 396 824 414 L842 410 L834 428 C842 456 812 480 780 470 Z" fill="#D9A24A"/>
+  </g>
+  <!-- 2 · 7:30 breakfast -->
+  <g id="vig-2" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" opacity="0">
+    <path d="M60 380 H840 L800 430 H100 Z" fill="#B5764A"/><path d="M120 430 V500 M780 430 V500" fill="none" stroke-width="10"/>
+    <path d="M250 260 C210 260 196 330 230 370 H330 C364 330 350 260 310 260 Z" fill="#FFF8EA"/><path d="M350 290 C390 290 390 340 350 340" fill="none"/><path d="M196 300 L160 280" fill="none"/><path d="M262 260 C262 240 298 240 298 260" fill="#FFF8EA"/>
+    <path d="M430 360 C430 330 500 330 500 360 Z" fill="#FFF8EA"/><path d="M420 360 H510 L500 376 H430 Z" fill="#FFF8EA"/>
+    <path d="M560 340 L700 310 L720 360 L580 370 Z" fill="#F2D06B"/><circle cx="620" cy="344" r="7" fill="#E4B94A"/><circle cx="670" cy="334" r="6" fill="#E4B94A"/>
+    <path d="M600 260 C620 220 680 220 700 260 L690 300 H610 Z" fill="#D9A24A"/>
+    <path d="M280 220 C270 200 290 190 280 170 M300 220 C290 200 310 190 300 170" fill="none" stroke-width="4" opacity=".6"/>
+  </g>
+  <!-- 3 · 8:30 treats poor patients -->
+  <g id="vig-3" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" opacity="0">
+    <path d="M0 440 H900 V520 H0 Z" fill="#C9B08A"/>
+    <path d="M300 300 H560 V440 H300 Z" fill="#6E4520"/><path d="M370 300 C370 250 490 250 490 300" fill="none" stroke-width="10"/>
+    <path d="M410 340 H450 V360 H470 V400 H450 V420 H410 V400 H390 V360 H410 Z" fill="#FFF8EA" stroke-width="4"/>
+    <g fill="#8CC4DC"><path d="M620 300 H670 V440 H620 Z"/><path d="M700 340 H740 V440 H700 Z" fill="#B7D59B"/><path d="M770 320 H810 V440 H770 Z" fill="#E8C25A"/></g>
+    <path d="M630 280 H660 V300 H630 Z M708 324 H732 V340 H708 Z M778 304 H802 V320 H778 Z" fill="#8B5A2B"/>
+    <path d="M330 300 C320 250 360 230 380 260 C390 280 400 300 430 300" fill="none" stroke="#3B3F47" stroke-width="8"/><circle cx="434" cy="300" r="14" fill="#7B8D99"/>
+  </g>
+  <!-- 4 · 10:00 into town by baroto -->
+  <g id="vig-4" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" opacity="0">
+    <path d="M0 340 H900 V520 H0 Z" fill="#5DA3C4"/>
+    <g fill="#D9C3A0"><path d="M560 340 V270 H640 V340 Z"/><path d="M660 340 V250 H760 V340 Z"/><path d="M780 340 V280 H860 V340 Z"/></g>
+    <g fill="#B5523B"><path d="M550 272 L600 236 L650 272 Z"/><path d="M650 252 L710 210 L770 252 Z"/><path d="M770 282 L820 246 L870 282 Z"/></g>
+    <path d="M120 400 C180 440 420 440 480 400 C440 392 160 392 120 400 Z" fill="#B5523B"/>
+    <path d="M300 396 L300 330" fill="none"/><circle cx="300" cy="312" r="20" fill="#E2AE7E"/><path d="M286 300 C290 286 312 286 316 300" fill="#2A211C"/>
+    <path d="M260 300 L360 460" fill="none" stroke="#8B5A2B" stroke-width="10"/>
+    <g fill="none" stroke="#EAF3FA" stroke-width="5"><path d="M80 470 q24 -14 48 0 t48 0"/><path d="M560 450 q24 -14 48 0 t48 0"/></g>
+  </g>
+  <!-- 5 · 12:00 lunch -->
+  <g id="vig-5" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" opacity="0">
+    <path d="M60 380 H840 L800 430 H100 Z" fill="#B5764A"/>
+    <path d="M240 300 C240 380 440 380 440 300 Z" fill="#E9E2CF"/><path d="M250 300 C270 260 410 260 430 300" fill="#FFFFFF"/>
+    <path d="M510 350 C510 330 760 330 760 350 C760 370 510 370 510 350 Z" fill="#E9E2CF"/>
+    <path d="M560 344 C600 316 680 316 710 340 L740 324 L732 352 L740 372 L710 356 C680 376 600 374 560 344 Z" fill="#8CA0B3"/><circle cx="586" cy="340" r="4" fill="#2E2117" stroke="none"/>
+    <path d="M300 240 C290 220 310 210 300 190 M340 240 C330 220 350 210 340 190 M380 240 C370 220 390 210 380 190" fill="none" stroke-width="4" opacity=".6"/>
+  </g>
+  <!-- 6 · 1–4 p.m. teaching -->
+  <g id="vig-6" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" opacity="0">
+    <path d="M160 80 H740 V330 H160 Z" fill="#2F4F3A"/><path d="M150 330 H750 V350 H150 Z" fill="#8B5A2B"/>
+    <g fill="none" stroke="#EDE7D6" stroke-width="5"><path d="M210 200 L230 140 L250 200 M218 178 H242"/><path d="M280 140 V200 M280 140 C320 140 320 170 280 170 C324 170 324 200 280 200"/><path d="M380 150 C350 136 340 196 380 196"/><path d="M450 170 H490 M470 150 V190"/><path d="M520 170 H560"/><path d="M600 160 H630 M600 180 H630"/></g>
+    <g fill="#2A211C"><circle cx="260" cy="440" r="44"/><circle cx="450" cy="450" r="48"/><circle cx="640" cy="440" r="44"/></g>
+    <g fill="#FBF3E2"><path d="M200 520 C200 480 320 480 320 520 Z"/><path d="M386 520 C386 486 514 486 514 520 Z"/><path d="M580 520 C580 480 700 480 700 520 Z"/></g>
+  </g>
+  <!-- 7 · night reading -->
+  <g id="vig-7" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" opacity="0">
+    <rect width="900" height="520" fill="#22385A" stroke="none"/>
+    <path d="M620 60 H820 V240 H620 Z" fill="#14243D"/><circle cx="720" cy="140" r="40" fill="#FFF0C2"/><circle cx="740" cy="128" r="36" fill="#14243D" stroke="none"/>
+    <circle cx="300" cy="260" r="200" fill="url(#day_vignettes-glow)" stroke="none"/>
+    <path d="M60 420 H840 V520 H60 Z" fill="#6E4520"/>
+    <path d="M200 400 C260 370 340 370 400 400 C460 370 540 370 600 400 V430 C540 400 460 400 400 430 C340 400 260 400 200 430 Z" fill="#FFF8EA"/>
+    <path d="M400 400 V430" fill="none" stroke-width="4"/>
+    <g fill="none" stroke="#B9A57E" stroke-width="3"><path d="M240 396 C280 384 330 384 370 396"/><path d="M430 396 C470 384 520 384 560 396"/></g>
+    <path d="M280 400 V300 H320 V400 Z" fill="#FFF8EA"/><path d="M300 300 C284 280 296 256 300 240 C306 260 318 278 300 300 Z" fill="#F4B942"/>
+  </g>
+</svg>

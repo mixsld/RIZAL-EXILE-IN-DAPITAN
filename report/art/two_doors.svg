@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="two_doors-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7D9A0"/><stop offset="1" stop-color="#FBEBCB"/></linearGradient>
+    <pattern id="two_doors-dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="7" cy="7" r="2.4" fill="#2E2117" opacity=".14"/></pattern>
+    <pattern id="two_doors-capiz" width="16" height="16" patternUnits="userSpaceOnUse"><rect width="16" height="16" fill="#F4ECD6"/><path d="M0 0 H16 V16" fill="none" stroke="#7A5230" stroke-width="2"/></pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#two_doors-sky)"/>
+  <rect width="1920" height="420" fill="url(#two_doors-dots)" opacity=".6"/>
+  <path d="M0 520 C300 460 600 500 960 470 C1300 440 1600 480 1920 450 L1920 700 L0 700 Z" fill="#A9C7A0" stroke="#2E2117" stroke-width="5"/>
+  <!-- ground + forked path -->
+  <path d="M0 760 H1920 V1080 H0 Z" fill="#CDBB8A" stroke="#2E2117" stroke-width="6"/>
+  <rect y="760" width="1920" height="320" fill="url(#two_doors-dots)" opacity=".5"/>
+  <path d="M880 1080 C900 980 920 920 940 880 C900 840 700 800 560 776 L640 772 C760 790 900 820 960 850 C1020 820 1180 790 1300 772 L1380 776 C1240 800 1040 840 1000 880 C1020 920 1040 980 1060 1080 Z" fill="#E9D7AE" stroke="#2E2117" stroke-width="5" stroke-linejoin="round"/>
+
+  <!-- ===== Mission house (left) ===== -->
+  <g id="house-mission" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M200 780 V420 H780 V780 Z" fill="#F1E3C6"/>
+    <path d="M170 424 L490 250 L810 424 Z" fill="#B5523B"/>
+    <path d="M490 250 V170 M460 196 H520" fill="none" stroke-width="8"/>
+    <g fill="url(#two_doors-capiz)" stroke-width="4"><rect x="250" y="470" width="110" height="90"/><rect x="620" y="470" width="110" height="90"/></g>
+    <g id="door-mission">
+      <path d="M410 780 V560 Q490 490 570 560 V780 Z" fill="#6E4520"/>
+      <path d="M490 520 V780" fill="none" stroke-width="4"/>
+      <circle cx="490" cy="470" r="34" fill="#E8C25A" stroke-width="4"/>
+      <text x="490" y="481" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="28" fill="#6E4520" stroke="none">IHS</text>
+    </g>
+    <!-- conditions sign on the door -->
+    <g id="sign-conditions" transform="translate(588 640) rotate(6)">
+      <rect x="0" y="0" width="150" height="104" rx="6" fill="#FFFCF2" stroke-width="4"/>
+      <path d="M18 26 H132 M18 50 H132 M18 74 H100" stroke="#B9A57E" stroke-width="5"/>
+      <path d="M-6 -8 L10 8" stroke-width="5"/>
+    </g>
+  </g>
+
+  <!-- ===== Carnicero's house (right) ===== -->
+  <g id="house-carnicero" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M1180 780 V560 H1720 V780 Z" fill="#D9C3A0"/>
+    <path d="M1160 560 V400 H1740 V560 Z" fill="#B5764A"/>
+    <path d="M1130 404 L1450 270 L1770 404 Z" fill="#9B3D2C"/>
+    <g fill="url(#two_doors-capiz)" stroke-width="4"><rect x="1210" y="430" width="130" height="96"/><rect x="1380" y="430" width="130" height="96"/><rect x="1550" y="430" width="130" height="96"/></g>
+    <g id="door-carnicero">
+      <path d="M1390 780 V640 Q1450 600 1510 640 V780 Z" fill="#7A5230"/>
+      <circle cx="1496" cy="712" r="7" fill="#E8C25A" stroke-width="3"/>
+    </g>
+    <!-- Spanish flag -->
+    <path d="M1720 400 V250" fill="none"/>
+    <path d="M1720 254 L1810 262 L1806 318 L1720 312 Z" fill="#B23A2E"/>
+    <path d="M1721 274 L1808 280 L1807 298 L1721 292 Z" fill="#F2C14E" stroke="none"/>
+    <!-- welcome mat -->
+    <path d="M1380 790 H1520 L1530 806 H1370 Z" fill="#B23A2E" stroke-width="4"/>
+  </g>
+  <!-- bushes -->
+  <g fill="#5E8F48" stroke="#2E2117" stroke-width="5" stroke-linejoin="round">
+    <path d="M90 780 C70 740 100 712 130 726 C140 696 190 696 196 730 C226 724 240 760 220 780 Z"/>
+    <path d="M1780 780 C1760 740 1790 712 1820 726 C1830 696 1880 696 1886 730 C1916 724 1930 760 1910 780 Z"/>
+  </g>
+</svg>

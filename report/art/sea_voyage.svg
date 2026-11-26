@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" >
+  <defs>
+    <!-- comic halftone dots -->
+    <pattern id="sea_voyage-dots" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="7" cy="7" r="2.6" fill="#2E2117" opacity="0.18"/>
+    </pattern>
+    <pattern id="sea_voyage-dotsLight" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="8" r="2.2" fill="#FFFFFF" opacity="0.35"/>
+    </pattern>
+    <linearGradient id="sea_voyage-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6D9A3"/>
+      <stop offset="1" stop-color="#FBEBC8"/>
+    </linearGradient>
+    <linearGradient id="sea_voyage-sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3C7DAE"/>
+      <stop offset="1" stop-color="#1F4E79"/>
+    </linearGradient>
+  </defs>
+
+  
+
+  <!-- ============ SKY ============ -->
+  <rect width="1920" height="1080" fill="url(#sea_voyage-sky)"/>
+  <rect width="1920" height="420" fill="url(#sea_voyage-dots)" opacity="0.55"/>
+
+  <!-- sun with comic rays -->
+  <g transform="translate(520 400)">
+    <g fill="#F2C14E" opacity="0.55">
+      <path d="M0 0 L-40 -260 L40 -260 Z"/>
+      <path d="M0 0 L-40 -260 L40 -260 Z" transform="rotate(30)"/>
+      <path d="M0 0 L-40 -260 L40 -260 Z" transform="rotate(60)"/>
+      <path d="M0 0 L-40 -260 L40 -260 Z" transform="rotate(-30)"/>
+      <path d="M0 0 L-40 -260 L40 -260 Z" transform="rotate(-60)"/>
+      <path d="M0 0 L-40 -260 L40 -260 Z" transform="rotate(-90)"/>
+      <path d="M0 0 L-40 -260 L40 -260 Z" transform="rotate(90)"/>
+    </g>
+    <circle r="92" fill="#F4B942" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+
+  <!-- clouds -->
+  <g fill="#FFF8EA" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M1180 250 C1150 250 1140 215 1168 205 C1165 172 1210 160 1232 182 C1250 150 1310 152 1322 190 C1355 180 1385 205 1372 232 C1392 248 1378 272 1352 268 C1320 284 1290 276 1278 268 C1250 282 1215 280 1200 266 C1192 262 1186 256 1180 250 Z"/>
+    <path d="M880 190 C860 190 856 166 876 160 C876 138 906 130 920 146 C934 124 976 128 982 154 C1004 150 1020 168 1010 184 C1018 198 1004 210 988 206 C966 216 944 212 936 206 C918 214 896 210 888 200 Z"/>
+  </g>
+
+  <!-- ============ DAPITAN COAST (right) ============ -->
+  <g>
+    <!-- far hill -->
+    <path d="M1380 700 C1450 560 1560 520 1660 540 C1760 500 1880 520 1940 560 L1940 720 L1380 720 Z" fill="#6E9A5B" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M1500 640 C1560 600 1640 590 1700 610" opacity="0.5" stroke="#2E2117" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+    <path d="M1720 590 C1780 570 1850 575 1900 600" opacity="0.5" stroke="#2E2117" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+    <!-- near shore -->
+    <path d="M1460 720 C1540 680 1640 668 1760 676 C1840 680 1900 690 1940 700 L1940 760 L1440 760 Z" fill="#E9D3A0" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+
+    <!-- nipa hut -->
+    <g transform="translate(1690 600)">
+      <path d="M-10 78 L-10 40 M70 78 L70 40" fill="none" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+      <path d="M-20 40 L80 40 L80 0 L-20 0 Z" fill="#C9A26A" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+      <path d="M-40 4 L30 -52 L100 4 Z" fill="#B5873F" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+      <path d="M-10 -20 L70 -20 M0 -32 L60 -32" opacity="0.6" stroke="#2E2117" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+      <path d="M20 40 L20 12 L42 12 L42 40" fill="#5A3E22" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+    </g>
+
+    <!-- palm tree 1 -->
+    <g transform="translate(1560 690)">
+      <path d="M0 0 C-6 -60 -2 -120 14 -170" fill="none" stroke="#2E2117" stroke-width="22" stroke-linecap="round"/>
+      <path d="M0 0 C-6 -60 -2 -120 14 -170" fill="none" stroke="#9B6B3D" stroke-width="12" stroke-linecap="round"/>
+      <g fill="#4F8A3F" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M14 -170 C-40 -200 -100 -180 -130 -140 C-80 -160 -40 -160 14 -170 Z"/>
+        <path d="M14 -170 C60 -210 130 -200 160 -160 C110 -175 60 -175 14 -170 Z"/>
+        <path d="M14 -170 C0 -230 40 -270 80 -270 C50 -240 30 -205 14 -170 Z"/>
+        <path d="M14 -170 C-30 -230 -90 -235 -110 -215 C-60 -210 -25 -195 14 -170 Z"/>
+        <path d="M14 -170 C70 -170 110 -130 115 -95 C85 -130 50 -150 14 -170 Z"/>
+      </g>
+      <circle cx="10" cy="-160" r="10" fill="#7A5230" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+    </g>
+    <!-- palm tree 2 (small) -->
+    <g transform="translate(1840 690) scale(0.75)">
+      <path d="M0 0 C8 -60 4 -120 -12 -170" fill="none" stroke="#2E2117" stroke-width="22" stroke-linecap="round"/>
+      <path d="M0 0 C8 -60 4 -120 -12 -170" fill="none" stroke="#9B6B3D" stroke-width="12" stroke-linecap="round"/>
+      <g fill="#4F8A3F" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M-12 -170 C-60 -200 -120 -185 -150 -145 C-100 -165 -60 -165 -12 -170 Z"/>
+        <path d="M-12 -170 C30 -210 100 -205 130 -165 C80 -178 35 -178 -12 -170 Z"/>
+        <path d="M-12 -170 C-20 -230 10 -270 50 -272 C22 -240 2 -205 -12 -170 Z"/>
+        <path d="M-12 -170 C40 -170 85 -135 92 -100 C60 -135 25 -152 -12 -170 Z"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============ SEA ============ -->
+  <path d="M0 700 L1940 700 L1940 1080 L0 1080 Z" fill="url(#sea_voyage-sea)"/>
+  <path d="M0 700 L1460 700" fill="none" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect y="820" width="1920" height="260" fill="url(#sea_voyage-dotsLight)" opacity="0.5"/>
+  <!-- wave strokes -->
+  <g style="stroke:#EAF3FA;stroke-width:5;fill:none;stroke-linecap:round" opacity="0.85">
+    <path d="M90 790 q30 -18 60 0 t60 0"/>
+    <path d="M380 860 q30 -18 60 0 t60 0 t60 0"/>
+    <path d="M1480 820 q30 -18 60 0 t60 0"/>
+    <path d="M1700 900 q30 -18 60 0 t60 0 t60 0"/>
+    <path d="M1180 940 q30 -18 60 0 t60 0"/>
+  </g>
+
+  <!-- dashed route behind the ship -->
+  <path id="wake-route" d="M120 760 C380 735 560 765 800 752" fill="none" stroke="#FFF8EA" stroke-width="6" stroke-dasharray="4 22" stroke-linecap="round" opacity="0.9"/>
+
+  <!-- ============ STEAMER "CEBU" ============ -->
+  </svg>

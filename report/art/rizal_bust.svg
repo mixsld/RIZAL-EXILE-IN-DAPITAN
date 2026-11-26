@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="110 160 580 740">
+  <defs>
+    <pattern id="rizal_bust-dots" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="2.2" fill="#2E2117" opacity="0.22"/>
+    </pattern>
+    <clipPath id="rizal_bust-face">
+      <path d="M296 372 C296 270 346 222 404 222 C466 222 512 270 510 372 C509 452 490 528 448 570 C428 590 382 590 362 570 C320 528 297 452 296 372 Z"/>
+    </clipPath>
+  </defs>
+  
+
+  <!-- paper backdrop with comic burst -->
+
+  <g transform="translate(0 -62)">
+  <!-- ===== COAT ===== -->
+  <path d="M120 990 C130 770 215 705 300 682 L400 730 L500 682 C585 705 670 770 680 990 Z" fill="#2E3A4A" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M560 720 C620 750 660 810 672 990 L600 990 C595 830 585 770 560 720 Z" fill="url(#rizal_bust-dots)"/>
+  <!-- shirt -->
+  <path d="M322 680 L400 775 L478 680 Z" fill="#FFF8EA" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- neck -->
+  <path d="M356 555 L356 688 Q400 718 448 688 L448 555 Z" fill="#E2AE7E" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M356 600 Q400 640 448 600 L448 560 L356 560 Z" fill="#C48D5C" opacity="0.55"/>
+  <!-- wing collar -->
+  <path d="M342 664 L398 704 L356 724 Z" fill="#FFFFFF" stroke-width="5" stroke="#2E2117" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M458 664 L402 704 L444 724 Z" fill="#FFFFFF" stroke-width="5" stroke="#2E2117" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- lapels -->
+  <path d="M300 682 L362 840 L392 748 L330 688 Z" fill="#232D3A" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M500 682 L438 840 L408 748 L470 688 Z" fill="#232D3A" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- bow tie -->
+  <path d="M400 712 L350 688 Q340 712 352 738 Z" fill="#1C1F2A" stroke-width="5" stroke="#2E2117" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M400 712 L450 688 Q460 712 448 738 Z" fill="#1C1F2A" stroke-width="5" stroke="#2E2117" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="388" y="700" width="24" height="24" rx="6" fill="#1C1F2A" stroke-width="5" stroke="#2E2117" stroke-linejoin="round" stroke-linecap="round"/>
+
+  </g>
+  <!-- ===== EARS ===== -->
+  <path d="M304 384 C278 372 264 400 271 428 C278 456 298 466 310 454 Z" fill="#E8B886" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M288 402 C284 417 288 432 298 440" stroke-width="4" opacity="0.6" stroke="#2E2117" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+  <path d="M502 384 C528 372 542 400 535 428 C528 456 508 466 496 454 Z" fill="#E8B886" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M518 402 C522 417 518 432 508 440" stroke-width="4" opacity="0.6" stroke="#2E2117" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+
+  <!-- ===== FACE ===== -->
+  <path d="M296 372 C296 270 346 222 404 222 C466 222 512 270 510 372 C509 452 490 528 448 570 C428 590 382 590 362 570 C320 528 297 452 296 372 Z" fill="#E8B886"/>
+  <g clip-path="url(#rizal_bust-face)">
+    <!-- shadow side (light from upper left) -->
+    <path d="M474 300 C504 380 504 460 476 520 C458 556 432 580 404 594 L520 600 L520 300 Z" fill="#C48D5C" opacity="0.55"/>
+    <path d="M474 300 C504 380 504 460 476 520 C458 556 432 580 404 594 L520 600 L520 300 Z" fill="url(#rizal_bust-dots)" opacity="0.7"/>
+    <!-- cheek warmth -->
+    <ellipse cx="342" cy="452" rx="26" ry="14" fill="#E0876A" opacity="0.28"/>
+    <ellipse cx="466" cy="452" rx="22" ry="12" fill="#E0876A" opacity="0.22"/>
+  </g>
+  <path d="M296 372 C296 270 346 222 404 222 C466 222 512 270 510 372 C509 452 490 528 448 570 C428 590 382 590 362 570 C320 528 297 452 296 372 Z" fill="none" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- ===== HAIR (thick, wavy, side part) ===== -->
+  <path d="M290 392 C272 318 288 238 342 204 C388 174 462 172 502 206 C530 232 526 268 514 302 C506 292 496 284 486 278 L464 268 C438 292 394 300 352 304 C328 326 312 356 304 396 Z" fill="#2A211C" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- big front wave -->
+  <path d="M316 302 C312 246 356 204 420 202 C454 202 478 218 484 242 C454 230 414 234 386 252 C358 268 336 286 316 302 Z" fill="#3B2F28" stroke-width="5" stroke="#2E2117" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- hair highlights -->
+  <g stroke="#6B5646" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" fill="none">
+    <path d="M352 226 C384 206 432 204 468 220"/>
+    <path d="M330 262 C350 246 380 240 410 242"/>
+    <path d="M490 236 C502 256 506 280 506 302"/>
+  </g>
+  <!-- side-part line -->
+  <path d="M464 268 C474 250 482 232 482 212" stroke="#14100D" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+
+  <!-- ===== BROWS ===== -->
+  <g id="brows-calm">
+  <path d="M332 366 C350 350 380 350 396 362" stroke="#2A211C" stroke-width="11" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+  <path d="M418 362 C434 350 464 350 480 366" stroke="#2A211C" stroke-width="11" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+  </g>
+  <g id="brows-think" opacity="0" fill="none" stroke="#2A211C" stroke-width="11" stroke-linecap="round">
+    <path d="M332 354 C350 336 380 338 396 352"/><path d="M418 366 C434 360 464 360 480 370"/>
+  </g>
+
+  <!-- ===== EYES ===== -->
+  <g id="eyes-open">
+  <g>
+    <path d="M340 400 C352 385 382 385 394 400 C382 410 352 410 340 400 Z" fill="#FFFDF7" stroke-width="4" stroke="#2E2117" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="370" cy="398" r="9.5" fill="#2A1A12"/>
+    <circle cx="373.5" cy="394.5" r="3" fill="#FFFFFF"/>
+    <path d="M338 399 C352 382 384 382 396 398" stroke-width="7" stroke="#2E2117" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+  </g>
+  <g>
+    <path d="M420 400 C432 385 462 385 474 400 C462 410 432 410 420 400 Z" fill="#FFFDF7" stroke-width="4" stroke="#2E2117" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="450" cy="398" r="9.5" fill="#2A1A12"/>
+    <circle cx="453.5" cy="394.5" r="3" fill="#FFFFFF"/>
+    <path d="M418 398 C430 382 462 382 476 399" stroke-width="7" stroke="#2E2117" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+  </g>
+  </g>
+  <g id="eyes-closed" opacity="0" fill="none" stroke="#2E2117" stroke-width="7" stroke-linecap="round">
+    <path d="M340 398 C352 408 382 408 394 398"/><path d="M420 398 C432 408 462 408 474 398"/>
+  </g>
+
+  <!-- ===== NOSE ===== -->
+  <path d="M412 392 C410 422 404 444 396 458" stroke="#A86F45" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+  <path d="M386 464 C394 474 414 476 428 466" stroke-width="5" stroke="#2E2117" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+
+  <!-- ===== MOUSTACHE + MOUTH ===== -->
+  <path d="M360 502 C376 486 396 488 405 496 C414 488 434 486 450 502 C434 500 418 504 405 506 C392 504 376 500 360 502 Z" fill="#2A211C" stroke-width="3" stroke="#2E2117" stroke-linejoin="round" stroke-linecap="round"/>
+  <g id="mouth-calm"><path d="M378 526 C394 535 416 535 432 526" stroke-width="5" stroke="#2E2117" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+  <path d="M392 544 C400 548 410 548 418 544" stroke="#A86F45" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" fill="none"/></g>
+  <g id="mouth-firm" opacity="0"><path d="M380 527 L430 527" fill="none" stroke="#2E2117" stroke-width="6" stroke-linecap="round"/></g>
+  <g id="mouth-smile" opacity="0"><path d="M374 520 C390 542 420 542 436 520 C420 528 390 528 374 520 Z" fill="#7A2E22" stroke="#2E2117" stroke-width="5" stroke-linejoin="round"/></g>
+</svg>

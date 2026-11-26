@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="740 300 780 560">
+  <defs>
+    <pattern id="steamer-dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="7" cy="7" r="2.6" fill="#2E2117" opacity="0.18"/></pattern>
+  </defs>
+  <g id="ship">
+    <!-- smoke -->
+    <g id="smoke" fill="#E8E1D4" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M1050 470 C1030 440 1060 410 1090 425 C1100 395 1150 395 1160 430 C1190 430 1195 470 1165 480 C1150 500 1080 500 1050 470 Z"/>
+      <path d="M935 400 C918 378 940 352 965 364 C975 340 1015 342 1022 370 C1046 372 1048 404 1024 410 C1010 425 955 424 935 400 Z" opacity="0.9"/>
+      <path d="M830 345 C818 330 834 312 852 320 C860 302 890 304 894 324 C912 326 912 350 895 354 C884 364 845 362 830 345 Z" opacity="0.75"/>
+    </g>
+
+    <!-- masts + rigging -->
+    <path d="M880 700 L880 500 M1330 690 L1330 520" fill="none" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M880 505 L790 690 M880 505 L1000 640 M1330 525 L1440 690 M1330 525 L1240 640" opacity="0.7" stroke="#2E2117" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+    <!-- flag -->
+    <path d="M880 500 L880 470" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+    <g transform="translate(880 470)">
+      <path d="M0 0 L52 6 L48 36 L0 32 Z" fill="#B23A2E" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+      <path d="M1 10 L51 15 L50 26 L1 22 Z" fill="#F2C14E"/>
+    </g>
+
+    <!-- smokestack -->
+    <path d="M1080 640 L1088 500 L1150 500 L1158 640 Z" fill="#C0392B" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M1086 530 L1152 530 L1150 500 L1088 500 Z" fill="#2E2117"/>
+    <path d="M1100 520 L1104 630" stroke="#FFFFFF" stroke-width="6" opacity="0.35" stroke-linecap="round"/>
+
+    <!-- cabin -->
+    <path d="M930 700 L930 630 Q930 618 942 618 L1290 618 Q1302 618 1302 630 L1302 700 Z" fill="#FFF8EA" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M915 622 L1318 622" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+    <g fill="#9FC6E3" stroke-width="4" stroke="#2E2117" stroke-linejoin="round" stroke-linecap="round">
+      <rect x="958" y="642" width="34" height="30" rx="8"/>
+      <rect x="1012" y="642" width="34" height="30" rx="8"/>
+      <rect x="1180" y="642" width="34" height="30" rx="8"/>
+      <rect x="1234" y="642" width="34" height="30" rx="8"/>
+    </g>
+    <path d="M1070 700 L1070 650 Q1070 640 1080 640 L1100 640 Q1110 640 1110 650 L1110 700" fill="#7A5230" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+
+    <!-- hull -->
+    <path d="M800 690 L1450 676 C1440 712 1418 748 1386 776 L868 776 C838 760 812 728 800 690 Z" fill="#2E3A4A" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M806 708 L1440 696" stroke="#C0392B" stroke-width="12"/>
+    <path d="M820 742 C980 748 1200 748 1400 740" fill="none" stroke="url(#steamer-dots)"/>
+    <path d="M846 750 L1396 744 C1390 756 1384 766 1376 776 L868 776 C860 768 852 760 846 750 Z" fill="url(#steamer-dots)"/>
+    <!-- portholes -->
+    <g fill="#F4B942" stroke-width="4" stroke="#2E2117" stroke-linejoin="round" stroke-linecap="round">
+      <circle cx="930" cy="728" r="9"/><circle cx="1010" cy="728" r="9"/>
+      <circle cx="1090" cy="727" r="9"/><circle cx="1170" cy="726" r="9"/>
+      <circle cx="1250" cy="725" r="9"/><circle cx="1330" cy="724" r="9"/>
+    </g>
+    <!-- name on bow -->
+    <text id="name-plate" x="1356" y="716" font-family="Georgia, serif" font-weight="700" font-size="19" fill="#FFF8EA" text-anchor="middle">CEBU</text>
+
+    <!-- bow foam + water line -->
+    <g id="wake" fill="#FFFFFF" stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M1380 780 C1420 760 1470 770 1490 790 C1460 792 1440 800 1410 798 C1395 796 1385 790 1380 780 Z"/>
+      <path d="M840 782 C810 770 770 776 755 792 C780 796 800 800 830 798 Z"/>
+    </g>
+    <!-- reflection -->
+    <path d="M880 800 L1380 800" stroke="#16384F" stroke-width="16" opacity="0.5" stroke-linecap="round"/>
+    <path d="M940 826 L1320 826" stroke="#16384F" stroke-width="10" opacity="0.35" stroke-linecap="round"/>
+  </g>
+</svg>

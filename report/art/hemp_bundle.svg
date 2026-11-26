@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220">
+  <defs>
+    <linearGradient id="hemp_bundle-fibre" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F5E6B8"/><stop offset="1" stop-color="#D6B771"/></linearGradient>
+  </defs>
+  <ellipse cx="260" cy="200" rx="230" ry="12" fill="#2E2117" opacity=".2"/>
+  <g stroke-linecap="round" fill="none">
+    <!-- frayed strand ends (left + right) -->
+    <g stroke="#2E2117" stroke-width="9">
+      <path d="M90 110 C60 96 40 80 18 70"/><path d="M90 124 C56 122 34 120 10 124"/><path d="M90 138 C58 146 38 160 20 176"/><path d="M92 150 C70 168 56 182 44 196"/>
+      <path d="M430 110 C460 96 480 80 502 70"/><path d="M430 124 C464 122 486 120 510 124"/><path d="M430 138 C462 146 482 160 500 176"/><path d="M428 150 C450 168 464 182 476 196"/>
+    </g>
+    <g stroke="#E9D29A" stroke-width="4">
+      <path d="M90 110 C60 96 40 80 18 70"/><path d="M90 124 C56 122 34 120 10 124"/><path d="M90 138 C58 146 38 160 20 176"/><path d="M92 150 C70 168 56 182 44 196"/>
+      <path d="M430 110 C460 96 480 80 502 70"/><path d="M430 124 C464 122 486 120 510 124"/><path d="M430 138 C462 146 482 160 500 176"/><path d="M428 150 C450 168 464 182 476 196"/>
+    </g>
+  </g>
+  <g stroke="#2E2117" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <!-- the sheaf: slim in the middle, long strands -->
+    <path d="M80 96 C180 84 340 84 440 96 C446 120 446 146 440 168 C340 180 180 180 80 168 C74 146 74 120 80 96 Z" fill="url(#hemp_bundle-fibre)"/>
+    <g fill="none" stroke="#BFA060" stroke-width="3">
+      <path d="M92 108 C190 98 330 98 428 108"/><path d="M90 122 C190 114 330 114 430 122"/><path d="M90 136 C190 130 330 130 430 136"/>
+      <path d="M90 150 C190 146 330 146 430 150"/><path d="M92 162 C190 160 330 160 428 162"/>
+    </g>
+    <!-- twine ties -->
+    <path d="M170 88 C162 118 162 150 170 178" fill="none" stroke="#8B5A2B" stroke-width="14"/>
+    <path d="M350 88 C358 118 358 150 350 178" fill="none" stroke="#8B5A2B" stroke-width="14"/>
+    <path d="M170 88 C162 118 162 150 170 178 M350 88 C358 118 358 150 350 178" fill="none" stroke-width="3" opacity=".6"/>
+    <path d="M168 178 C176 196 190 200 196 188 M352 178 C344 196 330 200 324 188" fill="none" stroke="#8B5A2B" stroke-width="6"/>
+  </g>
+</svg>
