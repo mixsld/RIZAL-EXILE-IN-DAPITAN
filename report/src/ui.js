@@ -32,8 +32,16 @@
     stage.append(sceneLayer, titleLayer, labels, quizLayer, top, headline, datecard, caption, source, info, drawer, progress, lintDot);
     viewport.appendChild(stage);
     const notes = h('aside', 'notes-panel');
+    /* touch controls (phones / tablets) */
+    const nav = h('nav', 'touch-nav');
+    [['prev', '◀', 'Back'], ['map', '🗺', 'Map'], ['fullscreen', '⛶', 'Full screen'], ['next', '▶', 'Next']].forEach(([act, icon, label]) => {
+      const b = h('button', 'tn-' + act, icon); b.dataset.act = act; b.setAttribute('aria-label', label); b.title = label; nav.appendChild(b);
+    });
+    const rotate = h('div', 'rotate-hint');
+    rotate.innerHTML = '<span class="rh-phone">📱</span><b>Turn your phone sideways</b><span>for the best view</span><button>OK</button>';
+    rotate.querySelector('button').addEventListener('click', () => rotate.classList.add('dismissed'));
     const cue = h('div', 'cue-sheet');
-    root.append(viewport, notes, cue);
+    root.append(viewport, notes, cue, nav, rotate);
 
     let scale = 1, captionsOn = true, captionTimer = null, lintIssues = [];
 
@@ -51,7 +59,7 @@
     function restart(el, cls) { el.classList.remove(cls); void el.offsetWidth; el.classList.add(cls); }
 
     const api = {
-      root, stage, sceneLayer, titleLayer, quizLayer, labelsLayer: labels,
+      root, stage, nav, sceneLayer, titleLayer, quizLayer, labelsLayer: labels,
       scale: () => scale,
       fit,
       showStep(cur) {

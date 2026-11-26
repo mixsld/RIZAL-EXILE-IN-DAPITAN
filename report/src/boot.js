@@ -35,6 +35,25 @@
       }
     }
     R.app.act = act;
+
+    /* ---- touch: buttons + swipe ---- */
+    const isTouch = params.has('touch') || (window.matchMedia && matchMedia('(pointer: coarse)').matches) || ('ontouchstart' in window);
+    if (isTouch) document.body.classList.add('touch');
+    ui.nav.addEventListener('click', e => { const b = e.target.closest('button[data-act]'); if (b) act(b.dataset.act); });
+    const NO_SWIPE = '.officer-card, .scratch, .day-slider, input, button, .touch-nav, .rotate-hint, .notes-panel';
+    let sw = null;
+    document.addEventListener('pointerdown', e => {
+      if (e.pointerType === 'mouse' || e.target.closest(NO_SWIPE)) { sw = null; return; }
+      sw = { x: e.clientX, y: e.clientY, t: Date.now() };
+    }, true);
+    document.addEventListener('pointerup', e => {
+      if (!sw) return;
+      const dx = e.clientX - sw.x, dy = e.clientY - sw.y; sw = null;
+      if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+        if (engine.isBusy()) engine.finishAnimations();
+        act(dx < 0 ? 'next' : 'prev');
+      }
+    }, true);
     document.addEventListener('keydown', e => {
       if (e.ctrlKey || e.metaKey || e.altKey) return;
       const a = R.routeKey(e.key, { isQuiz: engine.current().isQuiz });

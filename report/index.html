@@ -355,6 +355,26 @@ body.still *, body.still *::before, body.still *::after { transition: none !impo
 #stage.is-dark .labels-layer path { stroke: #FFF3D6; }
 #stage.is-dark .labels-layer circle { fill: #FFF3D6; }
 
+/* ===== Phones & tablets ===== */
+body.touch { touch-action: manipulation; }
+.touch-nav { display: none; }
+body.touch .touch-nav { display: flex; position: fixed; z-index: 95; right: calc(10px + env(safe-area-inset-right)); bottom: calc(10px + env(safe-area-inset-bottom));
+  gap: 6px; padding: 5px; background: rgba(30,22,16,.45); border-radius: 999px; backdrop-filter: blur(4px); }
+.touch-nav button { width: 42px; height: 42px; border-radius: 50%; border: 3px solid #2E2117; background: #FFF8EA; color: #2E2117;
+  font: 700 22px Georgia, serif; display: grid; place-items: center; cursor: pointer; box-shadow: 2px 3px 0 rgba(0,0,0,.25); padding: 0; }
+.touch-nav button:active { transform: translateY(2px); box-shadow: none; }
+.touch-nav .tn-next { background: #F4C452; width: 52px; }
+body.touch .touch-nav { opacity: .72; transition: opacity .2s; } body.touch .touch-nav:active, body.touch .touch-nav:hover { opacity: 1; }
+.rotate-hint { display: none; }
+@media (orientation: portrait) {
+  body.touch .rotate-hint:not(.dismissed) { display: flex; position: fixed; inset: 0; z-index: 99; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
+    background: rgba(27,21,17,.92); color: #FFF3D6; font: 20px Georgia, serif; text-align: center; padding: 30px; }
+  .rotate-hint .rh-phone { font-size: 64px; animation: tilt 1.8s ease-in-out infinite; }
+  .rotate-hint b { font-size: 26px; }
+  .rotate-hint button { margin-top: 14px; padding: 10px 30px; border-radius: 999px; border: 3px solid #FFF3D6; background: transparent; color: #FFF3D6; font: 20px Georgia, serif; }
+}
+@keyframes tilt { 0%, 30% { transform: rotate(0); } 60%, 100% { transform: rotate(-90deg); } }
+
 </style>
 </head>
 <body>
@@ -2419,8 +2439,16 @@ if (typeof module !== 'undefined') module.exports = globalThis.Report;
     stage.append(sceneLayer, titleLayer, labels, quizLayer, top, headline, datecard, caption, source, info, drawer, progress, lintDot);
     viewport.appendChild(stage);
     const notes = h('aside', 'notes-panel');
+    /* touch controls (phones / tablets) */
+    const nav = h('nav', 'touch-nav');
+    [['prev', '◀', 'Back'], ['map', '🗺', 'Map'], ['fullscreen', '⛶', 'Full screen'], ['next', '▶', 'Next']].forEach(([act, icon, label]) => {
+      const b = h('button', 'tn-' + act, icon); b.dataset.act = act; b.setAttribute('aria-label', label); b.title = label; nav.appendChild(b);
+    });
+    const rotate = h('div', 'rotate-hint');
+    rotate.innerHTML = '<span class="rh-phone">📱</span><b>Turn your phone sideways</b><span>for the best view</span><button>OK</button>';
+    rotate.querySelector('button').addEventListener('click', () => rotate.classList.add('dismissed'));
     const cue = h('div', 'cue-sheet');
-    root.append(viewport, notes, cue);
+    root.append(viewport, notes, cue, nav, rotate);
 
     let scale = 1, captionsOn = true, captionTimer = null, lintIssues = [];
 
@@ -2438,7 +2466,7 @@ if (typeof module !== 'undefined') module.exports = globalThis.Report;
     function restart(el, cls) { el.classList.remove(cls); void el.offsetWidth; el.classList.add(cls); }
 
     const api = {
-      root, stage, sceneLayer, titleLayer, quizLayer, labelsLayer: labels,
+      root, stage, nav, sceneLayer, titleLayer, quizLayer, labelsLayer: labels,
       scale: () => scale,
       fit,
       showStep(cur) {
@@ -4082,6 +4110,25 @@ if (typeof module !== 'undefined') module.exports = globalThis.Report;
       }
     }
     R.app.act = act;
+
+    /* ---- touch: buttons + swipe ---- */
+    const isTouch = params.has('touch') || (window.matchMedia && matchMedia('(pointer: coarse)').matches) || ('ontouchstart' in window);
+    if (isTouch) document.body.classList.add('touch');
+    ui.nav.addEventListener('click', e => { const b = e.target.closest('button[data-act]'); if (b) act(b.dataset.act); });
+    const NO_SWIPE = '.officer-card, .scratch, .day-slider, input, button, .touch-nav, .rotate-hint, .notes-panel';
+    let sw = null;
+    document.addEventListener('pointerdown', e => {
+      if (e.pointerType === 'mouse' || e.target.closest(NO_SWIPE)) { sw = null; return; }
+      sw = { x: e.clientX, y: e.clientY, t: Date.now() };
+    }, true);
+    document.addEventListener('pointerup', e => {
+      if (!sw) return;
+      const dx = e.clientX - sw.x, dy = e.clientY - sw.y; sw = null;
+      if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+        if (engine.isBusy()) engine.finishAnimations();
+        act(dx < 0 ? 'next' : 'prev');
+      }
+    }, true);
     document.addEventListener('keydown', e => {
       if (e.ctrlKey || e.metaKey || e.altKey) return;
       const a = R.routeKey(e.key, { isQuiz: engine.current().isQuiz });

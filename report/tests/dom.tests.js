@@ -394,3 +394,62 @@ test('run: thanks slide names the next chapter and the book', async () => {
   assert(/Chapter 16/.test($(w, '.caption').textContent), 'next chapter');
   assert(/Social Reformer and Patriot/.test($(w, '.frame').textContent), 'citation');
 });
+
+/* ---------------- Phone / touch ---------------- */
+test('touch: on-screen next and back buttons move through the report', async () => {
+  const w = await load(844, 390, 'touch');
+  const nav = $(w, '.touch-nav');
+  assert(nav && w.getComputedStyle(nav).display !== 'none', 'nav visible on touch');
+  const next = $(w, '.touch-nav [data-act="next"]'), prev = $(w, '.touch-nav [data-act="prev"]');
+  assert(await hit(w, '.touch-nav [data-act="next"]'), 'next button is tappable');
+  next.click(); await wait(60); w.Report.app.engine.finishAnimations(); next.click(); await wait(60);
+  eq(w.Report.app.engine.current().step.id, 'letter', 'advanced');
+  prev.click(); await wait(60);
+  eq(w.Report.app.engine.current().step.id, 'cover', 'went back');
+});
+
+test('touch: map button opens the journey map', async () => {
+  const w = await load(844, 390, 'touch');
+  await goStep(w, 'm2', 'fort');
+  $(w, '.touch-nav [data-act="map"]').click(); await wait(60);
+  eq(w.Report.app.engine.current().step.id, 'map');
+});
+
+test('touch: swiping left goes forward, swiping right goes back', async () => {
+  const w = await load(844, 390, 'touch');
+  const st = $(w, '#stage').getBoundingClientRect();
+  const swipe = async (x0, x1) => {
+    const t = w.document.elementFromPoint(x0, st.top + st.height * .4);
+    const o = { bubbles: true, pointerId: 7, isPrimary: true, pointerType: 'touch', clientY: st.top + st.height * .4 };
+    t.dispatchEvent(new w.PointerEvent('pointerdown', Object.assign({ clientX: x0 }, o)));
+    t.dispatchEvent(new w.PointerEvent('pointerup', Object.assign({ clientX: x1 }, o)));
+    await wait(60); w.Report.app.engine.finishAnimations();
+  };
+  await swipe(st.left + st.width * .8, st.left + st.width * .3);
+  eq(w.Report.app.engine.current().step.id, 'letter', 'swipe left = next');
+  await swipe(st.left + st.width * .3, st.left + st.width * .8);
+  eq(w.Report.app.engine.current().step.id, 'cover', 'swipe right = back');
+});
+
+test('touch: dragging an officer card is not mistaken for a swipe', async () => {
+  const w = await load(844, 390, 'touch');
+  await goStep(w, 'm1', 'officers'); w.Report.app.engine.finishAnimations(); await wait(60);
+  const card = $(w, '.officer-card'), r = card.getBoundingClientRect();
+  const o = { bubbles: true, pointerId: 8, isPrimary: true, pointerType: 'touch', clientY: r.top + 10 };
+  card.dispatchEvent(new w.PointerEvent('pointerdown', Object.assign({ clientX: r.left + 10 }, o)));
+  card.dispatchEvent(new w.PointerEvent('pointerup', Object.assign({ clientX: r.left - 200 }, o)));
+  await wait(60);
+  eq(w.Report.app.engine.current().step.id, 'officers', 'still on officers');
+});
+
+test('touch: portrait phone shows a turn-sideways hint', async () => {
+  const w = await load(390, 844, 'touch');
+  const hint = $(w, '.rotate-hint');
+  assert(hint && w.getComputedStyle(hint).display !== 'none', 'hint shown in portrait');
+});
+
+test('desktop: touch buttons stay hidden on the projector', async () => {
+  const w = await load(1920, 1080);
+  const nav = $(w, '.touch-nav');
+  assert(!nav || w.getComputedStyle(nav).opacity === '0' || w.getComputedStyle(nav).display === 'none', 'hidden');
+});
